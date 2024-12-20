@@ -45,7 +45,7 @@ For this round, you will:
 2. Prepare a 30-minute presentation
 
 
-In both assignments, we use the OpenAI API to generate structured output. You can read more about structured output on the [assignments](assignments/index.qmd) page.
+In both assignments, we use the OpenAI API to generate Anki flashcards using structured output. You can read more about Anki flashcards and structured output on the [assignments](assignments/index.qmd) page.
 
 
 
@@ -60,8 +60,9 @@ In both assignments, we use the OpenAI API to generate structured output. You ca
 {{< bi link >}} [Learn more about Assignment 2](assignments/assignment-2/index.qmd)
 
 ## Resources
-We provide the following materials to support your preparation:
-- Python code  for generating Anki flashcards: {{<bi file-code >}} [anki-flashcards.zip](assets/anki-flashcards.zip)
+We provide the following materials:
+
+- Python code for generating Anki flashcards: {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)
 
 
 ## Next Steps

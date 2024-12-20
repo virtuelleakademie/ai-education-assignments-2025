@@ -45,8 +45,10 @@ website:
         menu:
           - text: "{{< bi journal-code >}} Structured output"
             file: notebooks/structured-output.ipynb
-          - text: "{{< bi file-code >}} Download source code" 
-            file: assets/anki-flashcards.zip
+          - text: "{{< bi journal-code >}} Generate Anki Flashcards"
+            file: notebooks/generate-anki-deck.ipynb
+          - text: "{{< bi file-code >}} Download anki-deck-generator.zip" 
+            file: assets/anki-deck-generator.zip
 
       # - icon: wrench-adjustable #tools
       #   text: "Resources"
@@ -187,7 +189,7 @@ custom-callout:
     title: "Pro Tip"
     icon-symbol: "💡"
     color: "gold"
-    collapse: true
+    collapse: false
 
   # Technical Elements
   prompt-example:

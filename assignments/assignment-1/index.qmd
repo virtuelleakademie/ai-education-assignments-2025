@@ -1,16 +1,26 @@
 ---
-title: "Input: KI erste Schritte, Datenschutz"
+title: "Assignment 1: Teaching AI Development Workshop"
 ---
 
-{{< bi book >}} Inhalt:
+## Overview
+Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.
 
-- Diese Präsentation beleuchtet die Auswirkungen von Large Language Models (LLMs) wie ChatGPT auf Hochschulen.
-- erklärt, wie LLMs Wort für Wort Text basierend auf Trainingsdaten generieren.
-- zeigt potenzielle Vorteile auf: erhöhte Produktivität, Unterstützung der Kreativität.
-- diskutiert Herausforderungen: Deskilling, Missbrauch.
-- erörtert rechtliche Aspekte rund um Urheberrecht und Datenschutz.
-- gibt Empfehlungen zur Deklaration von KI-generierten Inhalten.
-- adressiert Bedenken zur Plagiatserkennung.
-- Das Ziel ist, LLMs zu entmystifizieren und einen ausgewogenen Blick auf die spontane Übernahme dieser "Ankunftstechnologien" zu bieten.
+## Context
+Many university lecturers are interested in leveraging AI to enhance their teaching but may lack the technical knowledge to develop their own tools. You have been provided with example code ({{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)) that creates Anki flashcards from teaching materials using the OpenAI API.
 
-{{< revealjs file="../../slides/input/index.html" height="500px" class="ratio ratio-16x9" >}}
+## Instructions
+1. Read the [instructions](assignments/index.qmd) for the assignment.
+2. Download the {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip) and unzip it.
+3. Follow the instructions in the code to run the Anki flashcard generator.
+4. Write a 30-minute presentation of your workshop concept.
+5. Present your workshop concept to the class.
+
+
+Present your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises.
+
+:::{.reflect}
+## Notes
+- The current code is a starting point---there are many edge cases that are not handled.
+- Feel free to make suggestions on how to improve the code.
+- Consider that participants may not have much (or indeed any) experience with Python.
+:::

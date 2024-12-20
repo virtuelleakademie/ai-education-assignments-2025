@@ -51,6 +51,7 @@ Assume you are giving a 3-hour workshop to lecturers at a university. The goal o
 - how to call the LLM with the prompt
 - how to use structured outputs to control the format of the LLM's response
 
+## Structured output
 You can read more about generating structured output here:
 
 {{< bi link >}} [Structured output](../notebooks/structured-output.ipynb)
@@ -64,16 +65,13 @@ You can read more about generating structured output here:
 > We will first use an LLM, either GPT-4o or GPT-4o Mini, to extract pairs of questions and answers from the teaching material. Additionally, we can also extract `tags` for each flashcard, which we can use to categorise the flashcards later.
 
 
-> I recommend using some of the tools we've learned in this workshop:
+> You will learn how to:
 
-> - creating suitable system and user messages for an LLM
+> - create suitable system and user messages for an LLM
 > - create a prompt to extract pairs of questions and answers from the > teaching material
-> - writing a function to call an LLM with the prompt
-> - using structured outputs to control the format of the LLM's response
+> - write a function to call an LLM with the prompt
+> - use structured outputs to control the format of the LLM's response to:
 >   + define a `pydantic` model to describe the format of the desired response
 >   + call the LLM with the `structured` output format
 
 
-
-
-{{< bi code-square >}} Let's get started! You can find detailed instructions on the [next page](../../projects/anki/index.qmd).

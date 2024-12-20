@@ -1,29 +1,41 @@
 ---
-title: "Input: Prompting"
+title: "Assignment 2: Quality Control for AI-Generated Content"
 ---
 
-In der folgenden Präsentation diskutieren wir folgende Prompting-Regeln:
+Candidates design a system for evaluating and improving AI-generated flashcard quality
+They should present methods for quality assessment, automated evaluation, and improvement
+Focus is on defining quality criteria, implementing quality metrics, and validating educational value
+Uses the same Python code as a starting point
+Tests technical depth, systematic thinking, and understanding of educational assessment
+
+## Overview
+Your task is to design and present a system for evaluating and improving the quality of AI-generated flashcards. You will present your concept to the hiring committee in a 30-minute presentation, followed by 10 minutes of discussion.
 
 
-1. Sei klar und präzise
-2. Fange einfach an und verbessere
-3. Verwende Beispiele und Kontext
-4. Leite den Denkprozess
-5. Nutze ChatGPT/Copilots "Wissen"
-6. Verwende Rollenspieltechniken
+
+## Context
+The provided Python script (generate-anki-deck.py) creates Anki flashcards from teaching materials using the OpenAI API. While the system generates flashcards efficiently, ensuring their educational quality and accuracy is crucial for effective learning.
+
+## Your Task
+Design and present a systematic approach for:
+
+- Evaluating the quality of AI-generated flashcards
+- Implementing automated quality control measures
+- Improving the generation process based on quality metrics
+
+## Instructions
+1. Read the [instructions](assignments/index.qmd) for the assignment.
+2. Download the {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip) and unzip it.
+3. Follow the instructions in the code to run the Anki flashcard generator.
+4. Write a 30-minute presentation of your workshop concept.
+5. Present your workshop concept to the class.
 
 
-{{< revealjs file="../../slides/prompting/index.html" height="500px" class="ratio ratio-16x9" >}}
+Present your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises
 
-<!-- {{< pdf file="../../slides/prompting/index.qmd" width=100% height=800 >}} -->
-
-<br> <br>
-
-## Weiterführende Präsentationen 
-KI in der Lehre Workshops (auf Englisch):
-
-{{< revealjs file="../../slides/prompt-engineering-basics/index.html" height="500px" class="ratio ratio-16x9" >}}
-
-
-{{< revealjs file="../../slides/prompt-engineering-intermediate/index.html" height="500px" class="ratio ratio-16x9" >}}
-
+:::{.reflect}
+## Notes
+- The current code is a starting point---there are many edge cases that are not handled.
+- Feel free to make suggestions on how to improve the code.
+- Consider that participants may not have much (or indeed any) experience with Python.
+:::

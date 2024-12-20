@@ -176,7 +176,7 @@
     "href": "index.html",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "We’re excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications in education and developing AI-based tools for teaching and learning.\n\n\nFor this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate structured output. You can read more about structured output on the assignments page.\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2\n\n\n\n\nWe provide the following materials to support your preparation: - Python code for generating Anki flashcards:  anki-flashcards.zip\n\n\n\n\nReview both assignments in detail\nChoose your preferred assignment\nPrepare your 30-minute presentation\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at andrew.ellis@bfh.ch."
+    "text": "We’re excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications in education and developing AI-based tools for teaching and learning.\n\n\nFor this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate Anki flashcards using structured output. You can read more about Anki flashcards and structured output on the assignments page.\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2\n\n\n\n\nWe provide the following materials:\n\nPython code for generating Anki flashcards:  anki-deck-generator.zip\n\n\n\n\n\nReview both assignments in detail\nChoose your preferred assignment\nPrepare your 30-minute presentation\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at andrew.ellis@bfh.ch."
   },
   {
     "objectID": "workshop/index.html",
@@ -894,34 +894,34 @@
   {
     "objectID": "assignments/assignment-2/index.html",
     "href": "assignments/assignment-2/index.html",
-    "title": "Input: Prompting",
+    "title": "Assignment 2: Quality Control for AI-Generated Content",
     "section": "",
-    "text": "In der folgenden Präsentation diskutieren wir folgende Prompting-Regeln:\nView slides in full screen",
+    "text": "Candidates design a system for evaluating and improving AI-generated flashcard quality They should present methods for quality assessment, automated evaluation, and improvement Focus is on defining quality criteria, implementing quality metrics, and validating educational value Uses the same Python code as a starting point Tests technical depth, systematic thinking, and understanding of educational assessment",
     "crumbs": [
       "Assignments",
-      "Input: Prompting"
+      "Assignment 2: Quality Control for AI-Generated Content"
     ]
   },
   {
     "objectID": "assignments/assignment-2/index.html#weiterführende-präsentationen",
     "href": "assignments/assignment-2/index.html#weiterführende-präsentationen",
-    "title": "Input: Prompting",
+    "title": "Assignment 2: Quality Control for AI-Generated Content",
     "section": "Weiterführende Präsentationen",
     "text": "Weiterführende Präsentationen\nKI in der Lehre Workshops (auf Englisch):\n    View slides in full screen\n       \n      \n    \n  \n    View slides in full screen",
     "crumbs": [
       "Assignments",
-      "Input: Prompting"
+      "Assignment 2: Quality Control for AI-Generated Content"
     ]
   },
   {
     "objectID": "assignments/assignment-1/index.html",
     "href": "assignments/assignment-1/index.html",
-    "title": "Input: KI erste Schritte, Datenschutz",
+    "title": "Assignment 1: Teaching AI Development Workshop",
     "section": "",
-    "text": "Inhalt:\n\nDiese Präsentation beleuchtet die Auswirkungen von Large Language Models (LLMs) wie ChatGPT auf Hochschulen.\nerklärt, wie LLMs Wort für Wort Text basierend auf Trainingsdaten generieren.\nzeigt potenzielle Vorteile auf: erhöhte Produktivität, Unterstützung der Kreativität.\ndiskutiert Herausforderungen: Deskilling, Missbrauch.\nerörtert rechtliche Aspekte rund um Urheberrecht und Datenschutz.\ngibt Empfehlungen zur Deklaration von KI-generierten Inhalten.\nadressiert Bedenken zur Plagiatserkennung.\nDas Ziel ist, LLMs zu entmystifizieren und einen ausgewogenen Blick auf die spontane Übernahme dieser “Ankunftstechnologien” zu bieten.\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n Back to topReuseCC BY 4.0",
+    "text": "Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.",
     "crumbs": [
       "Assignments",
-      "Input: KI erste Schritte, Datenschutz"
+      "Assignment 1: Teaching AI Development Workshop"
     ]
   },
   {
@@ -943,7 +943,7 @@
     "href": "index.html#resources",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "We provide the following materials to support your preparation: - Python code for generating Anki flashcards:  anki-flashcards.zip"
+    "text": "We provide the following materials:\n\nPython code for generating Anki flashcards:  anki-deck-generator.zip"
   },
   {
     "objectID": "index.html#next-steps",
@@ -964,7 +964,7 @@
     "href": "index.html#assessment-overview",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "For this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate structured output. You can read more about structured output on the assignments page.\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2"
+    "text": "For this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate Anki flashcards using structured output. You can read more about Anki flashcards and structured output on the assignments page.\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2"
   },
   {
     "objectID": "index.html#questions-1",
@@ -1000,7 +1000,7 @@
     "href": "assignments/index.html#workshop",
     "title": "Overview: Anki flashcards",
     "section": "Workshop",
-    "text": "Workshop\nAssume you are giving a 3-hour workshop to lecturers at a university. The goal of this workshop is to teach them how to use an LLM to generate an Anki deck of flashcards for their students. For this, you will need to instruct lecturers on the following:\n\nhow to set up an Python environment with the necessary libraries\nhow to set up an OpenAI API key\nhow to use the OpenAI API\nhow to create a prompt to extract pairs of questions and answers from the teaching material\nhow to call the LLM with the prompt\nhow to use structured outputs to control the format of the LLM’s response\n\nYou can read more about generating structured output here:\n Structured output\n\nWorkshop description\n\nThe goal of this project is to create a set of flashcards based on your some teaching material, and to save these in a CSV file that can be imported into Anki.\n\n\nWe will use the following teaching material: four essays about different musical eras (e.g. Baroque, Classical, Romantic, and Modern). These were generated using an LLM, and haven’t been verified for accuracy, but they should give you an idea of what you can do with an LLM.\n\n\nWe will first use an LLM, either GPT-4o or GPT-4o Mini, to extract pairs of questions and answers from the teaching material. Additionally, we can also extract tags for each flashcard, which we can use to categorise the flashcards later.\n\n\nI recommend using some of the tools we’ve learned in this workshop:\n\n\n\ncreating suitable system and user messages for an LLM\ncreate a prompt to extract pairs of questions and answers from the &gt; teaching material\nwriting a function to call an LLM with the prompt\nusing structured outputs to control the format of the LLM’s response\n\ndefine a pydantic model to describe the format of the desired response\ncall the LLM with the structured output format\n\n\n\n Let’s get started! You can find detailed instructions on the next page.",
+    "text": "Workshop\nAssume you are giving a 3-hour workshop to lecturers at a university. The goal of this workshop is to teach them how to use an LLM to generate an Anki deck of flashcards for their students. For this, you will need to instruct lecturers on the following:\n\nhow to set up an Python environment with the necessary libraries\nhow to set up an OpenAI API key\nhow to use the OpenAI API\nhow to create a prompt to extract pairs of questions and answers from the teaching material\nhow to call the LLM with the prompt\nhow to use structured outputs to control the format of the LLM’s response",
     "crumbs": [
       "Assignments",
       "Overview: Anki flashcards"
@@ -1012,5 +1012,142 @@
     "title": "AI Expert Position Assessment",
     "section": "",
     "text": "Teaching AI Development Workshop\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n\n Learn more about Assignment 1\n\nQuality Control for AI-Generated Content\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n\n Learn more about Assignment 2"
+  },
+  {
+    "objectID": "assignments/index.html#structured-output",
+    "href": "assignments/index.html#structured-output",
+    "title": "Overview: Anki flashcards",
+    "section": "Structured output",
+    "text": "Structured output\nYou can read more about generating structured output here:\n Structured output\n\nWorkshop description\n\nThe goal of this project is to create a set of flashcards based on your some teaching material, and to save these in a CSV file that can be imported into Anki.\n\n\nWe will use the following teaching material: four essays about different musical eras (e.g. Baroque, Classical, Romantic, and Modern). These were generated using an LLM, and haven’t been verified for accuracy, but they should give you an idea of what you can do with an LLM.\n\n\nWe will first use an LLM, either GPT-4o or GPT-4o Mini, to extract pairs of questions and answers from the teaching material. Additionally, we can also extract tags for each flashcard, which we can use to categorise the flashcards later.\n\n\nYou will learn how to:\n\n\n\ncreate suitable system and user messages for an LLM\ncreate a prompt to extract pairs of questions and answers from the &gt; teaching material\nwrite a function to call an LLM with the prompt\nuse structured outputs to control the format of the LLM’s response to:\n\ndefine a pydantic model to describe the format of the desired response\ncall the LLM with the structured output format",
+    "crumbs": [
+      "Assignments",
+      "Overview: Anki flashcards"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1/index.html#overview",
+    "href": "assignments/assignment-1/index.html#overview",
+    "title": "Assignment 1: Teaching AI Development Workshop",
+    "section": "",
+    "text": "Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.",
+    "crumbs": [
+      "Assignments",
+      "Assignment 1: Teaching AI Development Workshop"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1/index.html#context",
+    "href": "assignments/assignment-1/index.html#context",
+    "title": "Assignment 1: Teaching AI Development Workshop",
+    "section": "Context",
+    "text": "Context\nMany university lecturers are interested in leveraging AI to enhance their teaching but may lack the technical knowledge to develop their own tools. You have been provided with example code ( anki-deck-generator.zip) that creates Anki flashcards from teaching materials using the OpenAI API.",
+    "crumbs": [
+      "Assignments",
+      "Assignment 1: Teaching AI Development Workshop"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1/index.html#instructions",
+    "href": "assignments/assignment-1/index.html#instructions",
+    "title": "Assignment 1: Teaching AI Development Workshop",
+    "section": "Instructions",
+    "text": "Instructions\n\nRead the instructions for the assignment.\nDownload the  anki-deck-generator.zip and unzip it.\nFollow the instructions in the code to run the Anki flashcard generator.\nWrite a 30-minute presentation of your workshop concept.\nPresent your workshop concept to the class.\n\nPresent your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises.\n\n\n\n\n\n\nNotes\n\n\n\n\nThe current code is a starting point. Feel free to make suggestions on howto improve it.\nConsider that participants may not have much (or indeed any) experience with Python.",
+    "crumbs": [
+      "Assignments",
+      "Assignment 1: Teaching AI Development Workshop"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2/index.html#overview",
+    "href": "assignments/assignment-2/index.html#overview",
+    "title": "Assignment 2: Quality Control for AI-Generated Content",
+    "section": "Overview",
+    "text": "Overview\nYour task is to design and present a system for evaluating and improving the quality of AI-generated flashcards. You will present your concept to the hiring committee in a 30-minute presentation, followed by 10 minutes of discussion.",
+    "crumbs": [
+      "Assignments",
+      "Assignment 2: Quality Control for AI-Generated Content"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2/index.html#context",
+    "href": "assignments/assignment-2/index.html#context",
+    "title": "Assignment 2: Quality Control for AI-Generated Content",
+    "section": "Context",
+    "text": "Context\nThe provided Python script (generate-anki-deck.py) creates Anki flashcards from teaching materials using the OpenAI API. While the system generates flashcards efficiently, ensuring their educational quality and accuracy is crucial for effective learning.",
+    "crumbs": [
+      "Assignments",
+      "Assignment 2: Quality Control for AI-Generated Content"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2/index.html#your-task",
+    "href": "assignments/assignment-2/index.html#your-task",
+    "title": "Assignment 2: Quality Control for AI-Generated Content",
+    "section": "Your Task",
+    "text": "Your Task\nDesign and present a systematic approach for:\n\nEvaluating the quality of AI-generated flashcards\nImplementing automated quality control measures\nImproving the generation process based on quality metrics",
+    "crumbs": [
+      "Assignments",
+      "Assignment 2: Quality Control for AI-Generated Content"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2/index.html#instructions",
+    "href": "assignments/assignment-2/index.html#instructions",
+    "title": "Assignment 2: Quality Control for AI-Generated Content",
+    "section": "Instructions",
+    "text": "Instructions\n\nRead the instructions for the assignment.\nDownload the  anki-deck-generator.zip and unzip it.\nFollow the instructions in the code to run the Anki flashcard generator.\nWrite a 30-minute presentation of your workshop concept.\nPresent your workshop concept to the class.\n\nPresent your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises\n\n\n\n\n\n\nNotes\n\n\n\n\nThe current code is a starting point—there are many edge cases that are not handled.\nFeel free to make suggestions on how to improve the code.\nConsider that participants may not have much (or indeed any) experience with Python.",
+    "crumbs": [
+      "Assignments",
+      "Assignment 2: Quality Control for AI-Generated Content"
+    ]
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html",
+    "href": "notebooks/generate-anki-deck.html",
+    "title": "Generate Anki Flashcards",
+    "section": "",
+    "text": "Instructions:\n\nCreate a new virtual environment:\n\npython -m venv .venv\n\nActivate the environment:\n\nsource .venv/bin/activate\n\nInstall the dependencies:\n\npip install -r requirements.txt\n\nCreate a .env file and add your OpenAI API key:\n\nOPENAI_API_KEY=&lt;your-openai-api-key&gt;"
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html#setup",
+    "href": "notebooks/generate-anki-deck.html#setup",
+    "title": "Generate Anki Flashcards",
+    "section": "",
+    "text": "Instructions:\n\nCreate a new virtual environment:\n\npython -m venv .venv\n\nActivate the environment:\n\nsource .venv/bin/activate\n\nInstall the dependencies:\n\npip install -r requirements.txt\n\nCreate a .env file and add your OpenAI API key:\n\nOPENAI_API_KEY=&lt;your-openai-api-key&gt;"
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html#openai-client-and-pydantic-models",
+    "href": "notebooks/generate-anki-deck.html#openai-client-and-pydantic-models",
+    "title": "Generate Anki Flashcards",
+    "section": "OpenAI client and pydantic models",
+    "text": "OpenAI client and pydantic models\n\nimport os\nimport csv\nfrom dotenv import load_dotenv\nfrom openai import OpenAI \nfrom textwrap import dedent \n\n# Import Pydantic for data validation and typing\nfrom pydantic import BaseModel, Field\nfrom typing import List\n\n\nload_dotenv()\n\nTrue\n\n\nIf you want to see the API key, you can uncomment the following line:\n\n# print(os.getenv(\"OPENAI_API_KEY\"))\n\nInitialize OpenAI client:\n\nclient = OpenAI()\n\nDefine the AnkiFlashcard and AnkiDeck pydantic models:\n\nAnkiFlashcard: Represents a single flashcard with a question, answer, and tags\nAnkiDeck: Represents a collection of flashcards with a deck name\n\n\nclass AnkiFlashcard(BaseModel):\n    \"\"\"\n    Model representing a single Anki flashcard with question, answer, and tags.\n    \"\"\"\n    # Define required fields with descriptions\n    question: str = Field(..., description=\"The front side of the flashcard containing the question\")\n    answer: str = Field(..., description=\"The back side of the flashcard containing the answer\")\n    tags: List[str] = Field(..., description=\"List of tags associated with the flashcard\")\n\nclass AnkiDeck(BaseModel):\n    \"\"\"\n    Model representing a complete Anki deck containing multiple flashcards.\n    \"\"\"\n    # Define required fields with descriptions\n    cards: List[AnkiFlashcard] = Field(..., description=\"List of flashcards in the deck\")\n    deck_name: str = Field(..., description=\"Name of the Anki deck\")"
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html#function-to-generate-structured-flashcards",
+    "href": "notebooks/generate-anki-deck.html#function-to-generate-structured-flashcards",
+    "title": "Generate Anki Flashcards",
+    "section": "Function to generate structured flashcards",
+    "text": "Function to generate structured flashcards\nThe function takes a text input and generates a structured deck of Anki flashcards using the OpenAI API:\n\nValidates that the requested number of cards is at least 1\nMakes an API call to OpenAI with:\n\nSystem prompt that defines the flashcard creation task\nUser prompt containing the input text\nResponse format set to our AnkiDeck Pydantic model\n\nReturns the parsed response as a validated AnkiDeck object\n\n\ndef generate_deck(text: str, deck_name: str, num_cards: int = 5, model: str = \"gpt-4o-mini\") -&gt; AnkiDeck:\n    \"\"\"\n    Generate structured flashcards using GPT-4o or GPT-4o-mini with enforced Pydantic model output.\n    \n    Args:\n        text (str): The input text to generate flashcards from\n        deck_name (str): Name for the Anki deck\n        num_cards (int): Number of flashcards to generate (default: 5)\n        \n    Returns:\n        AnkiDeck: A structured deck of flashcards with validation\n        \n    Raises:\n        ValueError: If num_cards is less than 1\n    \"\"\"\n    # Validate input\n    if num_cards &lt; 1:\n        raise ValueError(\"Number of cards must be at least 1\")\n    \n    # Make API call with structured output format\n    completion = client.beta.chat.completions.parse(\n        model=model,\n        messages=[\n            {\n                \"role\": \"system\",\n                \"content\": dedent(f\"\"\"\n                    You are an expert at creating Anki flashcards. Your task is to:\n                    1. Read the provided text\n                    2. Create {num_cards} Anki flashcards that cover the main concepts\n                    3. Add relevant tags to each flashcard\n                    4. Structure the output as an Anki deck with the name \"{deck_name}\".\"\"\")\n            },\n            {\n                \"role\": \"user\",\n                \"content\": f\"Please create Anki flashcards for the following text: {text}\"\n            }\n        ],\n        response_format=AnkiDeck,\n    )\n    \n    # Return the parsed response\n    return completion.choices[0].message.parsed"
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html#test-the-function",
+    "href": "notebooks/generate-anki-deck.html#test-the-function",
+    "title": "Generate Anki Flashcards",
+    "section": "Test the function",
+    "text": "Test the function\nWe’ll first test the function with the baroque essay:\n\nwith open(\"assets/essays/baroque.md\", \"r\") as file:\n    baroque = file.read()\n\nprint the first 5 lines of the baroque essay:\n\nprint('\\n'.join(baroque.splitlines()[:5]))\n\n# The Baroque Era: Birth of Musical Drama (1600-1750)\n\nThe Baroque era represents one of the most transformative periods in Western musical history, marked by dramatic innovations in both compositional technique and musical expression. This period witnessed the birth of opera, the development of instrumental programs, and the establishment of musical practices that would influence composers for centuries to come.\n\n## The Birth of Opera and Dramatic Expression\n\n\nCall the function with the baroque essay and print the resulting deck. We are using the gpt-4o-mini model to generate a deck containing 5 flashcards.\n\nbaroque_deck = generate_deck(baroque, \"Baroque Period\", num_cards=5, model=\"gpt-4o-mini\")\n\n\nbaroque_deck\n\nAnkiDeck(cards=[AnkiFlashcard(question='What significant musical genre was born during the Baroque era?', answer='Opera was born during the Baroque era, particularly through the efforts of the Camerata in Florence.', tags=['Baroque Era', 'Opera', 'Musical Innovation']), AnkiFlashcard(question='Which composition is considered the first masterpiece of opera?', answer=\"Monteverdi's 'L'Orfeo' (1607) is regarded as the first masterpiece of opera.\", tags=['Baroque Era', \"L'Orfeo\", 'Opera']), AnkiFlashcard(question='What musical practice was established during the Baroque era to support harmonic structure?', answer='The practice of basso continuo was established, providing a bass line with chord symbols as the harmonic foundation.', tags=['Baroque Era', 'Basso Continuo', 'Harmony']), AnkiFlashcard(question='Who are two significant composers associated with the Baroque period?', answer='J.S. Bach and Jean-Baptiste Lully were significant composers of the Baroque period.', tags=['Baroque Era', 'J.S. Bach', 'Jean-Baptiste Lully']), AnkiFlashcard(question=\"What impact did the Baroque era have on Western music's future?\", answer='The Baroque era established functional harmony and important musical forms that influenced Classical and Romantic music.', tags=['Baroque Era', 'Musical Legacy', 'Functional Harmony'])], deck_name='Baroque Period')\n\n\nYou can also access the individual cards in the deck:\n\nbaroque_deck.cards\n\n[AnkiFlashcard(question='What significant musical genre was born during the Baroque era?', answer='Opera was born during the Baroque era, particularly through the efforts of the Camerata in Florence.', tags=['Baroque Era', 'Opera', 'Musical Innovation']),\n AnkiFlashcard(question='Which composition is considered the first masterpiece of opera?', answer=\"Monteverdi's 'L'Orfeo' (1607) is regarded as the first masterpiece of opera.\", tags=['Baroque Era', \"L'Orfeo\", 'Opera']),\n AnkiFlashcard(question='What musical practice was established during the Baroque era to support harmonic structure?', answer='The practice of basso continuo was established, providing a bass line with chord symbols as the harmonic foundation.', tags=['Baroque Era', 'Basso Continuo', 'Harmony']),\n AnkiFlashcard(question='Who are two significant composers associated with the Baroque period?', answer='J.S. Bach and Jean-Baptiste Lully were significant composers of the Baroque period.', tags=['Baroque Era', 'J.S. Bach', 'Jean-Baptiste Lully']),\n AnkiFlashcard(question=\"What impact did the Baroque era have on Western music's future?\", answer='The Baroque era established functional harmony and important musical forms that influenced Classical and Romantic music.', tags=['Baroque Era', 'Musical Legacy', 'Functional Harmony'])]\n\n\nPrint all the cards in the deck:\n\nfor card in baroque_deck.cards:\n    print(f\"Question: {card.question}\")\n    print(f\"Answer: {card.answer}\")\n    print(f\"Tags: {', '.join(card.tags)}\")\n    print(\"-\" * 20)\n\nQuestion: What significant musical genre was born during the Baroque era?\nAnswer: Opera was born during the Baroque era, particularly through the efforts of the Camerata in Florence.\nTags: Baroque Era, Opera, Musical Innovation\n--------------------\nQuestion: Which composition is considered the first masterpiece of opera?\nAnswer: Monteverdi's 'L'Orfeo' (1607) is regarded as the first masterpiece of opera.\nTags: Baroque Era, L'Orfeo, Opera\n--------------------\nQuestion: What musical practice was established during the Baroque era to support harmonic structure?\nAnswer: The practice of basso continuo was established, providing a bass line with chord symbols as the harmonic foundation.\nTags: Baroque Era, Basso Continuo, Harmony\n--------------------\nQuestion: Who are two significant composers associated with the Baroque period?\nAnswer: J.S. Bach and Jean-Baptiste Lully were significant composers of the Baroque period.\nTags: Baroque Era, J.S. Bach, Jean-Baptiste Lully\n--------------------\nQuestion: What impact did the Baroque era have on Western music's future?\nAnswer: The Baroque era established functional harmony and important musical forms that influenced Classical and Romantic music.\nTags: Baroque Era, Musical Legacy, Functional Harmony\n--------------------"
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html#write-deck-to-a-csv-file",
+    "href": "notebooks/generate-anki-deck.html#write-deck-to-a-csv-file",
+    "title": "Generate Anki Flashcards",
+    "section": "Write deck to a CSV file",
+    "text": "Write deck to a CSV file\nWe’ll create a function to write the deck to a CSV file. The function takes an AnkiDeck object and a path to save the CSV file. It ensures the directory exists and writes the deck to a CSV file with the following columns: Question, Answer, Tags.\n\ndef write_deck_to_csv(deck: AnkiDeck, output_path: str) -&gt; None:\n    \"\"\"\n    Save an Anki deck to a CSV file.\n    \n    Args:\n        deck (AnkiDeck): The deck of flashcards to save\n        output_path (str): Path where the CSV file should be saved\n    \"\"\"\n    # Ensure the directory exists\n    os.makedirs(os.path.dirname(output_path), exist_ok=True)\n    \n    with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:\n        writer = csv.writer(csvfile)\n        # Write header row\n        writer.writerow(['Question', 'Answer', 'Tags'])\n        # Write each flashcard as a row in the CSV\n        for card in deck.cards:\n            writer.writerow([card.question, card.answer, ', '.join(card.tags)])\n    print(f\"Successfully saved deck '{deck.deck_name}' to {output_path}\")\n\nSave the baroque deck to a CSV file:\n\nwrite_deck_to_csv(baroque_deck, 'assets/flashcards/baroque-flashcards.csv')\n\nSuccessfully saved deck 'Baroque Period' to assets/flashcards/baroque-flashcards.csv"
+  },
+  {
+    "objectID": "notebooks/generate-anki-deck.html#process-all-markdown-files-in-essays",
+    "href": "notebooks/generate-anki-deck.html#process-all-markdown-files-in-essays",
+    "title": "Generate Anki Flashcards",
+    "section": "Process all markdown files in essays",
+    "text": "Process all markdown files in essays\nNow we’ll process all the markdown files in the essays directory and generate flashcards for each one.\nFor simplicity, we will loop over all files. This could be made more efficient by using a function that takes a directory as an argument and returns a list of decks.\nFirst, we’ll import the glob module for finding pathnames matching a pattern.\n\nimport glob\n\nFind all the markdown files in the essays directory:\n\nessay_files = glob.glob(\"assets/essays/*.md\")\nessay_files\n\n['assets/essays/classical.md',\n 'assets/essays/modern.md',\n 'assets/essays/baroque.md',\n 'assets/essays/romantic.md']\n\n\nNow we’ll loop over all the files and generate flashcards for each one.\n\nfor essay_file in essay_files:\n    # Get the base filename without extension to use as deck name\n    base_name = os.path.basename(essay_file).replace('.md', '')\n    deck_name = base_name.replace('-', ' ').title()\n    \n    print(f\"Processing {deck_name}...\")\n    \n    # Read the essay content\n    with open(essay_file, \"r\") as file:\n        content = file.read()\n    \n    # Generate deck\n    deck = generate_deck(content, deck_name, num_cards=5, model=\"gpt-4o-mini\")\n    \n    # Save to CSV\n    output_path = f'assets/flashcards/{base_name}-flashcards.csv'\n    write_deck_to_csv(deck, output_path)\n    \n    print(f\"Saved flashcards to {output_path}\")\n\nProcessing Classical...\nSuccessfully saved deck 'Classical' to assets/flashcards/classical-flashcards.csv\nSaved flashcards to assets/flashcards/classical-flashcards.csv\nProcessing Modern...\nSuccessfully saved deck 'Modern' to assets/flashcards/modern-flashcards.csv\nSaved flashcards to assets/flashcards/modern-flashcards.csv\nProcessing Baroque...\nSuccessfully saved deck 'Baroque' to assets/flashcards/baroque-flashcards.csv\nSaved flashcards to assets/flashcards/baroque-flashcards.csv\nProcessing Romantic...\nSuccessfully saved deck 'Romantic' to assets/flashcards/romantic-flashcards.csv\nSaved flashcards to assets/flashcards/romantic-flashcards.csv"
   }
 ]
