@@ -47,7 +47,7 @@ website:
             file: notebooks/structured-output.ipynb
           - text: "{{< bi journal-code >}} Generate Anki Flashcards"
             file: notebooks/generate-anki-deck.ipynb
-          - text: "{{< bi file-code >}} Download anki-deck-generator.zip" 
+          - text: "{{< bi download >}} Download anki-deck-generator.zip" 
             file: assets/anki-deck-generator.zip
 
       # - icon: wrench-adjustable #tools
