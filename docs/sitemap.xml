@@ -1,99 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/template-slides.html</loc>
-    <lastmod>2024-12-04T13:25:20.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/prompt-engineering-intermediate/index.html</loc>
-    <lastmod>2024-12-04T13:25:20.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/openai-platform/index.html</loc>
-    <lastmod>2024-12-04T13:25:20.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/discussion/index.html</loc>
-    <lastmod>2024-12-04T13:25:20.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/test-structured-output.html</loc>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/verify-openai.html</loc>
     <lastmod>2024-12-04T13:25:20.589Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/setup-openai.html</loc>
-    <lastmod>2024-12-04T13:25:20.589Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/examples.html</loc>
-    <lastmod>2024-12-04T16:27:24.671Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/workshop/presentation/index.html</loc>
-    <lastmod>2024-12-04T23:36:00.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/index.html</loc>
-    <lastmod>2024-12-20T15:26:53.238Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/workshop/index.html</loc>
-    <lastmod>2024-12-20T11:06:12.693Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/workshop/prompting/index.html</loc>
-    <lastmod>2024-12-05T09:23:20.340Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/exploring-openai-models.html</loc>
-    <lastmod>2024-12-04T16:24:12.176Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/structured-output.html</loc>
     <lastmod>2024-12-20T13:06:44.277Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/verify-openai.html</loc>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/setup-openai.html</loc>
     <lastmod>2024-12-04T13:25:20.589Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/input/index.html</loc>
-    <lastmod>2024-12-05T21:08:35.675Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/prompt-engineering-basics/index.html</loc>
-    <lastmod>2024-12-04T13:25:20.591Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/slides/prompting/index.html</loc>
-    <lastmod>2024-12-05T09:35:00.400Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/spacy.html</loc>
-    <lastmod>2024-12-05T08:35:08.123Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/exploring-openai-models.html</loc>
+    <lastmod>2024-12-04T16:24:12.176Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/assignments/index.html</loc>
     <lastmod>2024-12-20T15:17:31.739Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/assignments/prompting/index.html</loc>
-    <lastmod>2024-12-05T09:23:20.340Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/assignments/assignment-1/index.html</loc>
+    <lastmod>2024-12-20T15:44:04.814Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/assignments/presentation/index.html</loc>
-    <lastmod>2024-12-04T23:36:00.337Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/index.html</loc>
+    <lastmod>2024-12-20T15:26:53.238Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/assignments/assignment-2/index.html</loc>
     <lastmod>2024-12-20T15:44:19.654Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/assignments/assignment-1/index.html</loc>
-    <lastmod>2024-12-20T15:41:35.127Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/examples.html</loc>
+    <lastmod>2024-12-04T16:27:24.671Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/generate-anki-deck.html</loc>
     <lastmod>2024-12-20T15:50:02.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/spacy.html</loc>
+    <lastmod>2024-12-05T08:35:08.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ai-education-assignments-2025/notebooks/test-structured-output.html</loc>
+    <lastmod>2024-12-04T13:25:20.589Z</lastmod>
   </url>
 </urlset>
