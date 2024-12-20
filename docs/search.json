@@ -176,7 +176,7 @@
     "href": "index.html",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "We’re excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications, developing AI-based tools, and supporting the implementation of AI solutions.\n\n\nFor this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\nParticipate in a 10-minute Q&A session\nDemonstrate your technical and educational expertise\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at [contact information].\nWelcome to the second round of assessment for the AI Expert position at our university. We’re excited to see how you approach the integration of AI technology in higher education.\n\n\n\nAs an AI Expert at our university, you will play a key role in: - Teaching lecturers about AI applications in education - Developing AI-based tools for teaching and learning - Supporting the implementation of AI solutions across departments\n\n\n\nFor this round, you will prepare and deliver a 30-minute presentation (followed by 10 minutes of Q&A) on one of two assignments:\n\nTeaching AI Development Workshop\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools. Learn more about Assignment 1 →\nQuality Control for AI-Generated Content\nDevelop and present a system for ensuring the quality of AI-generated educational materials. Learn more about Assignment 2 →\n\n\n\n\nWe provide the following materials to support your preparation: - Python script for generating Anki flashcards (generate-anki-deck.py) - Sample course materials for testing - Access to OpenAI API\n\n\n\n\nReview both assignments in detail\nChoose your preferred assignment\nInform us of your choice at least 2 days before your presentation\nPrepare your 30-minute presentation\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at [contact information].\nSelect an assignment below to view the detailed requirements:\n\nAssignment 1: Teaching Workshop\nAssignment 2: Quality Control System\n\n To the assignments"
+    "text": "We’re excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications in education and developing AI-based tools for teaching and learning.\n\n\nFor this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate structured output. You can read more about structured output on the assignments page.\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2\n\n\n\n\nWe provide the following materials to support your preparation: - Python code for generating Anki flashcards:  anki-flashcards.zip\n\n\n\n\nReview both assignments in detail\nChoose your preferred assignment\nPrepare your 30-minute presentation\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at andrew.ellis@bfh.ch."
   },
   {
     "objectID": "workshop/index.html",
@@ -943,28 +943,28 @@
     "href": "index.html#resources",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "We provide the following materials to support your preparation: - Python script for generating Anki flashcards (generate-anki-deck.py) - Sample course materials for testing - Access to OpenAI API"
+    "text": "We provide the following materials to support your preparation: - Python code for generating Anki flashcards:  anki-flashcards.zip"
   },
   {
     "objectID": "index.html#next-steps",
     "href": "index.html#next-steps",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "Review both assignments in detail\nChoose your preferred assignment\nInform us of your choice at least 2 days before your presentation\nPrepare your 30-minute presentation"
+    "text": "Review both assignments in detail\nChoose your preferred assignment\nPrepare your 30-minute presentation"
   },
   {
     "objectID": "index.html#questions",
     "href": "index.html#questions",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "If you have any questions about the assignments or require additional information, please contact us at [contact information].\nWelcome to the second round of assessment for the AI Expert position at our university. We’re excited to see how you approach the integration of AI technology in higher education."
+    "text": "If you have any questions about the assignments or require additional information, please contact us at andrew.ellis@bfh.ch."
   },
   {
     "objectID": "index.html#assessment-overview",
     "href": "index.html#assessment-overview",
     "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "For this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\nParticipate in a 10-minute Q&A session\nDemonstrate your technical and educational expertise"
+    "text": "For this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate structured output. You can read more about structured output on the assignments page.\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2"
   },
   {
     "objectID": "index.html#questions-1",
@@ -1005,5 +1005,12 @@
       "Assignments",
       "Overview: Anki flashcards"
     ]
+  },
+  {
+    "objectID": "index.html#assessment-tasks",
+    "href": "index.html#assessment-tasks",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "Teaching AI Development Workshop\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n\n Learn more about Assignment 1\n\nQuality Control for AI-Generated Content\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n\n Learn more about Assignment 2"
   }
 ]
