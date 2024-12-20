@@ -1,0 +1,74 @@
+{
+  "index.qmd": {
+    "index.html": "16190cf5"
+  },
+  "workshop/discussion/index.qmd": {
+    "index.html": "44f28697"
+  },
+  "workshop/index.qmd": {
+    "index.html": "3456e3b5"
+  },
+  "workshop/openai/index.qmd": {
+    "index.html": "61ccd010"
+  },
+  "workshop/projects/index.qmd": {
+    "index.html": "9b1f2a57"
+  },
+  "workshop/setup/index.qmd": {
+    "index.html": "dd7d5bec"
+  },
+  "notebooks/exploring-openai-models.ipynb": {
+    "exploring-openai-models.html": "00e6ca01"
+  },
+  "notebooks/setup-openai.ipynb": {
+    "setup-openai.html": "c38923f1"
+  },
+  "notebooks/structured-output.ipynb": {
+    "structured-output.html": "208e2d5c"
+  },
+  "notebooks/test-structured-output.ipynb": {
+    "test-structured-output.html": "ccdc1dea"
+  },
+  "notebooks/verify-openai.ipynb": {
+    "verify-openai.html": "8a91b117"
+  },
+  "slides/discussion/index.qmd": {
+    "index.html": "26d9e354"
+  },
+  "slides/openai-platform/index.qmd": {
+    "index.html": "8721c746"
+  },
+  "slides/prompt-engineering-basics/index.qmd": {
+    "index.html": "13abbd05"
+  },
+  "slides/prompt-engineering-intermediate/index.qmd": {
+    "index.html": "30fe3876"
+  },
+  "slides/template-slides.qmd": {
+    "template-slides.html": "7b583449"
+  },
+  "slides/understanding-llms/index.qmd": {
+    "index.html": "57bc0a81"
+  },
+  "slides/presentation/index.qmd": {
+    "index.html": "574d2144"
+  },
+  "slides/prompting/index.qmd": {
+    "index.html": "026e3b98"
+  },
+  "workshop/presentation/index.qmd": {
+    "index.html": "ce71b905"
+  },
+  "workshop/prompting/index.qmd": {
+    "index.html": "018a9503"
+  },
+  "slides/input/index.qmd": {
+    "index.html": "3d55918d"
+  },
+  "notebooks/examples.ipynb": {
+    "examples.html": "ee3a75b8"
+  },
+  "notebooks/spacy.ipynb": {
+    "spacy.html": "7b83c428"
+  }
+}
