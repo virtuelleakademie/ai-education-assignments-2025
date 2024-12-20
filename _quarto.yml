@@ -8,7 +8,7 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - workshop/**/*.qmd
+    - assignments/**/*.qmd
     # - projects/**/*.qmd
     - notebooks/*.ipynb
     # - "!tutorials/tutorial-1/index.qmd"
@@ -33,26 +33,20 @@ website:
     background: light
     left:
       - icon: card-list
-        href: workshop/index.qmd
-        text: Workshop
+        href: assignments/index.qmd
+        text: Assignments
 
       # - icon: code-square
       #   href: projects/anki/index.qmd
       #   text: Projects
 
-      - icon: file-slides
-        text: "Dokumente" # {{< fa person-chalkboard >}}
+      - icon:  code-square
+        text: "Code" # {{< fa person-chalkboard >}}
         menu:
-          - text: "Input: KI erste Schritte"
-            file: slides/input/index.qmd
-          - text: "Input: Prompting"
-            file: slides/prompting/index.qmd
-          - text: "Begleitdokument: KI Weiterbildung"
-            file: assets/pdfs/Begleitdokument.pdf
-          # - text: "Basic prompt engineering"
-          #   file: slides/prompt-engineering-basics/index.qmd
-          # - text: "Intermediate prompt engineering"
-          #   file: slides/prompt-engineering-intermediate/index.qmd
+          - text: "{{< bi journal-code >}} Structured output"
+            file: notebooks/structured-output.ipynb
+          - text: "{{< bi file-code >}} Download source code" 
+            file: assets/anki-flashcards.zip
 
       # - icon: wrench-adjustable #tools
       #   text: "Resources"
@@ -75,23 +69,14 @@ website:
     #         url:  https://github.com/virtuelleakademie/ai-education-assignments-2025/issues
             
   sidebar:
-    - title: "Workshop"
+    - title: "Assignments"
       style: "docked"
       search: true
       background: light
       contents:
-        - workshop/index.qmd
-        - workshop/presentation/index.qmd
-        - workshop/prompting/index.qmd
-
-
-    - title: "Projects"
-      style: "docked"
-      search: true
-      background: light
-      contents:
-        - projects/anki/index.qmd
-        - projects/anki/example/index.qmd
+        - assignments/index.qmd
+        - assignments/assignment-1/index.qmd
+        - assignments/assignment-2/index.qmd
 
 
 page-footer:
