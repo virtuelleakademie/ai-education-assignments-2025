@@ -174,16 +174,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "QR Code",
+    "title": "AI Expert Position Assessment",
     "section": "",
-    "text": "QR Code\n\n\n\n virtuelleakademie.github.io/ai-education-assignments-2025\n\n\n\n Back to top"
+    "text": "We’re excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications, developing AI-based tools, and supporting the implementation of AI solutions.\n\n\nFor this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\nParticipate in a 10-minute Q&A session\nDemonstrate your technical and educational expertise\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at [contact information].\nWelcome to the second round of assessment for the AI Expert position at our university. We’re excited to see how you approach the integration of AI technology in higher education.\n\n\n\nAs an AI Expert at our university, you will play a key role in: - Teaching lecturers about AI applications in education - Developing AI-based tools for teaching and learning - Supporting the implementation of AI solutions across departments\n\n\n\nFor this round, you will prepare and deliver a 30-minute presentation (followed by 10 minutes of Q&A) on one of two assignments:\n\nTeaching AI Development Workshop\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools. Learn more about Assignment 1 →\nQuality Control for AI-Generated Content\nDevelop and present a system for ensuring the quality of AI-generated educational materials. Learn more about Assignment 2 →\n\n\n\n\nWe provide the following materials to support your preparation: - Python script for generating Anki flashcards (generate-anki-deck.py) - Sample course materials for testing - Access to OpenAI API\n\n\n\n\nReview both assignments in detail\nChoose your preferred assignment\nInform us of your choice at least 2 days before your presentation\nPrepare your 30-minute presentation\n\n\n\n\nIf you have any questions about the assignments or require additional information, please contact us at [contact information].\nSelect an assignment below to view the detailed requirements:\n\nAssignment 1: Teaching Workshop\nAssignment 2: Quality Control System\n\n To the assignments"
   },
   {
     "objectID": "workshop/index.html",
     "href": "workshop/index.html",
     "title": "Inhalt",
     "section": "",
-    "text": "Workshop-Program auf einen Blick:\n\n\n\n\n Inhalt\n\n\n\n\n\n13:30 – 13:45\nBegrüssung und Input zu Notebook LM\nNina\n\n\n13:45 – 14:35\nInput: KI erste Schritte, Datenschutz\nAndrew\n\n\n14:35 – 14:55\nAustausch in Gruppen, visuell auf Flipchart\nDana\n\n\n14:55 – 15:05\nGruppen stellen Ergebnisse vor\n\n\n\n14:05 – 15:20\nPause\n\n\n\n15:20 – 15:35\nInput Prompting\nAndrew\n\n\n15:35 – 16:35\nEinführung zu Tools: Chat GPT, Copilot  Aufgaben aus Austausch mit Hilfe von Chat GPT / Copilot lösen im Think-Pair–Share\nRaymond\n\n\n16:35 – 16:50\nPräsentation der Ergebnisse\n\n\n\n16:50 – 17:00\nAustausch, Abschluss\n\n\n\nAb 17:00\nApero mit VMAD-HKB im OG\n\n\n\n\n\n\n\n\n Back to topReuseCC BY 4.0",
+    "text": "Assignments:\n\n\n\n\n Inhalt\n\n\n\n\n\n13:30 – 13:45\nBegrüssung und Input zu Notebook LM\nNina\n\n\n13:45 – 14:35\nInput: KI erste Schritte, Datenschutz\nAndrew\n\n\n14:35 – 14:55\nAustausch in Gruppen, visuell auf Flipchart\nDana\n\n\n14:55 – 15:05\nGruppen stellen Ergebnisse vor\n\n\n\n14:05 – 15:20\nPause\n\n\n\n15:20 – 15:35\nInput Prompting\nAndrew\n\n\n15:35 – 16:35\nEinführung zu Tools: Chat GPT, Copilot  Aufgaben aus Austausch mit Hilfe von Chat GPT / Copilot lösen im Think-Pair–Share\nRaymond\n\n\n16:35 – 16:50\nPräsentation der Ergebnisse\n\n\n\n16:50 – 17:00\nAustausch, Abschluss\n\n\n\nAb 17:00\nApero mit VMAD-HKB im OG\n\n\n\n\n\n\n\n Back to topReuseCC BY 4.0",
     "crumbs": [
       "Workshop",
       "Inhalt"
@@ -854,5 +854,156 @@
     "title": "Prompting: Eine Einführung",
     "section": "2. Fange einfach an und verbessere {.smaller}}",
     "text": "2. Fange einfach an und verbessere {.smaller}}\nBeispiel 1:\n\n\n\n\n❌\n\n\nEntwickle ein vollständiges Regiekonzept für eine moderne Adaption von Shakespeares Hamlet, einschliesslich Bühnenbild, Kostümgestaltung, Lichtdesign und einer Analyse der Charaktere.\n\n\n\n\n\n\n\n\n✅\n\n\nErstelle drei zentrale Ideen, wie eine moderne Version von Hamlet durch Bühnenbild und Kostüme visuell vermittelt werden könnte.\n\n\n\n\n\nWichtig: Dies ist nur der Ausgangspunkt. Basierend auf der Antwort solltest du weitere Fragen stellen oder um Erklärungen bitten. Zum Beispiel:\n\n“Kannst du ein Beispiel für ein spezifisches Kostümdetail geben, das moderne Elemente einbezieht?”\n“Wie könnte das Bühnenbild die Stimmung oder den inneren Konflikt der Charaktere widerspiegeln?”"
+  },
+  {
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "Overview: Anki flashcards",
+    "section": "",
+    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.",
+    "crumbs": [
+      "Assignments",
+      "Overview: Anki flashcards"
+    ]
+  },
+  {
+    "objectID": "assignments/prompting/index.html",
+    "href": "assignments/prompting/index.html",
+    "title": "Input: Prompting",
+    "section": "",
+    "text": "In der folgenden Präsentation diskutieren wir folgende Prompting-Regeln:\nView slides in full screen"
+  },
+  {
+    "objectID": "assignments/prompting/index.html#weiterführende-präsentationen",
+    "href": "assignments/prompting/index.html#weiterführende-präsentationen",
+    "title": "Input: Prompting",
+    "section": "Weiterführende Präsentationen",
+    "text": "Weiterführende Präsentationen\nKI in der Lehre Workshops (auf Englisch):\n    View slides in full screen\n       \n      \n    \n  \n    View slides in full screen"
+  },
+  {
+    "objectID": "assignments/presentation/index.html",
+    "href": "assignments/presentation/index.html",
+    "title": "Input: KI erste Schritte, Datenschutz",
+    "section": "",
+    "text": "Inhalt:\n\nDiese Präsentation beleuchtet die Auswirkungen von Large Language Models (LLMs) wie ChatGPT auf Hochschulen.\nerklärt, wie LLMs Wort für Wort Text basierend auf Trainingsdaten generieren.\nzeigt potenzielle Vorteile auf: erhöhte Produktivität, Unterstützung der Kreativität.\ndiskutiert Herausforderungen: Deskilling, Missbrauch.\nerörtert rechtliche Aspekte rund um Urheberrecht und Datenschutz.\ngibt Empfehlungen zur Deklaration von KI-generierten Inhalten.\nadressiert Bedenken zur Plagiatserkennung.\nDas Ziel ist, LLMs zu entmystifizieren und einen ausgewogenen Blick auf die spontane Übernahme dieser “Ankunftstechnologien” zu bieten.\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n Back to topReuseCC BY 4.0",
+    "crumbs": [
+      "Assignments",
+      "Input: KI erste Schritte, Datenschutz"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2/index.html",
+    "href": "assignments/assignment-2/index.html",
+    "title": "Input: Prompting",
+    "section": "",
+    "text": "In der folgenden Präsentation diskutieren wir folgende Prompting-Regeln:\nView slides in full screen",
+    "crumbs": [
+      "Assignments",
+      "Input: Prompting"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-2/index.html#weiterführende-präsentationen",
+    "href": "assignments/assignment-2/index.html#weiterführende-präsentationen",
+    "title": "Input: Prompting",
+    "section": "Weiterführende Präsentationen",
+    "text": "Weiterführende Präsentationen\nKI in der Lehre Workshops (auf Englisch):\n    View slides in full screen\n       \n      \n    \n  \n    View slides in full screen",
+    "crumbs": [
+      "Assignments",
+      "Input: Prompting"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1/index.html",
+    "href": "assignments/assignment-1/index.html",
+    "title": "Input: KI erste Schritte, Datenschutz",
+    "section": "",
+    "text": "Inhalt:\n\nDiese Präsentation beleuchtet die Auswirkungen von Large Language Models (LLMs) wie ChatGPT auf Hochschulen.\nerklärt, wie LLMs Wort für Wort Text basierend auf Trainingsdaten generieren.\nzeigt potenzielle Vorteile auf: erhöhte Produktivität, Unterstützung der Kreativität.\ndiskutiert Herausforderungen: Deskilling, Missbrauch.\nerörtert rechtliche Aspekte rund um Urheberrecht und Datenschutz.\ngibt Empfehlungen zur Deklaration von KI-generierten Inhalten.\nadressiert Bedenken zur Plagiatserkennung.\nDas Ziel ist, LLMs zu entmystifizieren und einen ausgewogenen Blick auf die spontane Übernahme dieser “Ankunftstechnologien” zu bieten.\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\n Back to topReuseCC BY 4.0",
+    "crumbs": [
+      "Assignments",
+      "Input: KI erste Schritte, Datenschutz"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "As an AI Expert at our university, you will play a key role in: - Teaching lecturers about AI applications in education - Developing AI-based tools for teaching and learning - Supporting the implementation of AI solutions across departments"
+  },
+  {
+    "objectID": "index.html#your-assessment-task",
+    "href": "index.html#your-assessment-task",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "For this round, you will prepare and deliver a 30-minute presentation (followed by 10 minutes of Q&A) on one of two assignments:\n\nTeaching AI Development Workshop\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools. Learn more about Assignment 1 →\nQuality Control for AI-Generated Content\nDevelop and present a system for ensuring the quality of AI-generated educational materials. Learn more about Assignment 2 →"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "We provide the following materials to support your preparation: - Python script for generating Anki flashcards (generate-anki-deck.py) - Sample course materials for testing - Access to OpenAI API"
+  },
+  {
+    "objectID": "index.html#next-steps",
+    "href": "index.html#next-steps",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "Review both assignments in detail\nChoose your preferred assignment\nInform us of your choice at least 2 days before your presentation\nPrepare your 30-minute presentation"
+  },
+  {
+    "objectID": "index.html#questions",
+    "href": "index.html#questions",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "If you have any questions about the assignments or require additional information, please contact us at [contact information].\nWelcome to the second round of assessment for the AI Expert position at our university. We’re excited to see how you approach the integration of AI technology in higher education."
+  },
+  {
+    "objectID": "index.html#assessment-overview",
+    "href": "index.html#assessment-overview",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "For this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\nParticipate in a 10-minute Q&A session\nDemonstrate your technical and educational expertise"
+  },
+  {
+    "objectID": "index.html#questions-1",
+    "href": "index.html#questions-1",
+    "title": "AI Expert Position Assessment",
+    "section": "",
+    "text": "If you have any questions about the assignments or require additional information, please contact us at [contact information].\nSelect an assignment below to view the detailed requirements:\n\nAssignment 1: Teaching Workshop\nAssignment 2: Quality Control System\n\n To the assignments"
+  },
+  {
+    "objectID": "assignments/index.html#background",
+    "href": "assignments/index.html#background",
+    "title": "Overview: Anki flashcards",
+    "section": "",
+    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.",
+    "crumbs": [
+      "Assignments",
+      "Overview: Anki flashcards"
+    ]
+  },
+  {
+    "objectID": "assignments/index.html#flashcards",
+    "href": "assignments/index.html#flashcards",
+    "title": "Overview: Anki flashcards",
+    "section": "Flashcards",
+    "text": "Flashcards\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards in a variety of formats, including Anki’s native format, but also from a comma-separated values (CSV) file.\nA CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in a file called anki-flashcards.csv, we can import them into Anki by selecting the File -&gt; Import... menu item.",
+    "crumbs": [
+      "Assignments",
+      "Overview: Anki flashcards"
+    ]
+  },
+  {
+    "objectID": "assignments/index.html#workshop",
+    "href": "assignments/index.html#workshop",
+    "title": "Overview: Anki flashcards",
+    "section": "Workshop",
+    "text": "Workshop\nAssume you are giving a 3-hour workshop to lecturers at a university. The goal of this workshop is to teach them how to use an LLM to generate an Anki deck of flashcards for their students. For this, you will need to instruct lecturers on the following:\n\nhow to set up an Python environment with the necessary libraries\nhow to set up an OpenAI API key\nhow to use the OpenAI API\nhow to create a prompt to extract pairs of questions and answers from the teaching material\nhow to call the LLM with the prompt\nhow to use structured outputs to control the format of the LLM’s response\n\nYou can read more about generating structured output here:\n Structured output\n\nWorkshop description\n\nThe goal of this project is to create a set of flashcards based on your some teaching material, and to save these in a CSV file that can be imported into Anki.\n\n\nWe will use the following teaching material: four essays about different musical eras (e.g. Baroque, Classical, Romantic, and Modern). These were generated using an LLM, and haven’t been verified for accuracy, but they should give you an idea of what you can do with an LLM.\n\n\nWe will first use an LLM, either GPT-4o or GPT-4o Mini, to extract pairs of questions and answers from the teaching material. Additionally, we can also extract tags for each flashcard, which we can use to categorise the flashcards later.\n\n\nI recommend using some of the tools we’ve learned in this workshop:\n\n\n\ncreating suitable system and user messages for an LLM\ncreate a prompt to extract pairs of questions and answers from the &gt; teaching material\nwriting a function to call an LLM with the prompt\nusing structured outputs to control the format of the LLM’s response\n\ndefine a pydantic model to describe the format of the desired response\ncall the LLM with the structured output format\n\n\n\n Let’s get started! You can find detailed instructions on the next page.",
+    "crumbs": [
+      "Assignments",
+      "Overview: Anki flashcards"
+    ]
   }
 ]

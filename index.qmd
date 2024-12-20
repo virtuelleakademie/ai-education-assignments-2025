@@ -4,32 +4,90 @@
 format:
   html:
     toc: false
-about:
-  template: jolla #trestles
-#   image: "assets/logo.png"
-  links:
-    - icon: magic
-      text: Virtuelle Akademie
-      href: https://virtuelleakademie.ch/
-    - icon: lightbulb-fill
-      text: Knowledge Base
-      href: https://virtuelleakademie.ch/knowledge-base/
-    - icon: mortarboard-fill
-      text: Weiterbildungsangebote
-      href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
-    - icon: inbox-fill
-      text: Email
-      href: mailto:andrew.ellis@bfh.ch
+# about:
+#   template: jolla #trestles
+# #   image: "assets/logo.png"
+#   links:
+#     - icon: magic
+#       text: Virtuelle Akademie
+#       href: https://virtuelleakademie.ch/
+#     # - icon: lightbulb-fill
+#     #   text: Knowledge Base
+#     #   href: https://virtuelleakademie.ch/knowledge-base/
+#     # - icon: mortarboard-fill
+#     #   text: Weiterbildungsangebote
+#     #   href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
+#     - icon: inbox-fill
+#       text: Email
+#       href: mailto:andrew.ellis@bfh.ch
 ---
 
 
-# QR Code
 
-{{< qrcode https://virtuelleakademie.github.io/ai-education-assignments-2025/ width=400 height=400 colorDark='#000000' >}}
+<!-- # QR Code
+
+{{< qrcode https://virtuelleakademie.github.io/ai-education-assignments-2025/ width=200 height=200 colorDark='#000000' >}}
 
 <br> 
 
-{{< bi link >}} [virtuelleakademie.github.io/ai-education-assignments-2025](https://virtuelleakademie.github.io/ai-education-assignments-2025/)
+{{< bi link >}} [virtuelleakademie.github.io/ai-education-assignments-2025](https://virtuelleakademie.github.io/ai-education-assignments-2025/) -->
 
 
+# AI Expert Position Assessment
 
+We're excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications, developing AI-based tools, and supporting the implementation of AI solutions.
+
+## Assessment Overview
+
+For this round, you will:
+
+1. Choose one of two assignments
+2. Prepare a 30-minute presentation
+3. Participate in a 10-minute Q&A session
+4. Demonstrate your technical and educational expertise
+
+
+## Questions?
+If you have any questions about the assignments or require additional information, please contact us at [contact information].
+
+Welcome to the second round of assessment for the AI Expert position at our university. We're excited to see how you approach the integration of AI technology in higher education.
+
+## Overview
+As an AI Expert at our university, you will play a key role in:
+- Teaching lecturers about AI applications in education
+- Developing AI-based tools for teaching and learning
+- Supporting the implementation of AI solutions across departments
+
+## Your Assessment Task
+For this round, you will prepare and deliver a 30-minute presentation (followed by 10 minutes of Q&A) on one of two assignments:
+
+1. **Teaching AI Development Workshop**  
+   Design and present your approach for teaching lecturers how to create AI-powered educational tools.
+   [Learn more about Assignment 1 →](assignments/assignment-1/index.qmd)
+
+2. **Quality Control for AI-Generated Content**  
+   Develop and present a system for ensuring the quality of AI-generated educational materials.
+   [Learn more about Assignment 2 →](assignments/assignment-2/index.qmd)
+
+## Resources
+We provide the following materials to support your preparation:
+- Python script for generating Anki flashcards (generate-anki-deck.py)
+- Sample course materials for testing
+- Access to OpenAI API
+
+## Next Steps
+1. Review both assignments in detail
+2. Choose your preferred assignment
+3. Inform us of your choice at least 2 days before your presentation
+4. Prepare your 30-minute presentation
+
+## Questions?
+If you have any questions about the assignments or require additional information, please contact us at [contact information].
+
+Select an assignment below to view the detailed requirements:
+
+- [Assignment 1: Teaching Workshop](assignment1.html)
+- [Assignment 2: Quality Control System](assignment2.html)
+
+
+{{< bi link >}} [To the assignments](../assignments/index.qmd)
