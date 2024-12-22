@@ -1,56 +1,25 @@
 ---
-title: "AI Expert Position Assessment"
+title: "AI Expert Position Assessment - Round 2"
 format:
   html:
     toc: false
 ---
 
+# Welcome to Round 2
 
-We're excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications in education and developing AI-based tools for teaching and learning.
+We look forward to seeing your innovative approach to integrating AI technology in higher education. In your role as an AI Expert at our university, you will be instrumental in educating lecturers on AI applications for teaching and helping develop AI-powered educational tools.
 
-## Assessment Overview
+## Your Task
 
 For this round, you will:
 
-1. Choose one of two assignments
-2. Prepare a 30-minute presentation
+1. Choose **one** of the two assignments detailed below
+2. Prepare and deliver a 20-minute presentation
 
+Both assignments involve working with the OpenAI API to generate Anki flashcards using structured output. Before reviewing the assignments, we recommend reading the background information about Anki flashcards.
 
-In both assignments, we use the OpenAI API to generate Anki flashcards using structured output. You can read more about Anki flashcards and structured output on the [assignments](assignments/index.qmd) page.
+:::{.callout-note title="Background: Anki Flashcards" collapse=true}
 
-
-
-### Assignment 1: Teaching AI Development Workshop  
-   Design and present your approach for teaching lecturers how to create AI-powered educational tools.
-
-{{< bi link >}} [Learn more about Assignment 1](assignments/assignment-1/index.qmd)
-
-### Assignment 2: Quality Control for AI-Generated Content
-   Develop and present a system for ensuring the quality of AI-generated educational materials.
-
-{{< bi link >}} [Learn more about Assignment 2](assignments/assignment-2/index.qmd)
-
-## Resources
-We provide the following materials:
-
-- Python code for generating Anki flashcards: {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)
-
-
-## Next Steps
-1. Review both assignments in detail
-2. Choose your preferred assignment
-3. Prepare your 30-minute presentation
-
-## Questions?
-If you have any questions about the assignments or require additional information, please contact us at [andrew.ellis@bfh.ch](mailto:andrew.ellis@bfh.ch).
-
-
-
-:::{.background collapse=true}
-## Overview: Anki flashcards
-
-
-### Background
 [Anki](https://apps.ankiweb.net/) is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user's performance. This is thought to ensure that information is reinforced before it is forgotten.
 
 One of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.
@@ -61,9 +30,7 @@ However, Anki requires a lot of manual work to create effective flashcards. In t
 ### Flashcards
 The simplest type of Anki flashcard is a pair of text fields: a **question** and an **answer** (or a *term* and a *definition*).
 
-Anki can import flashcards in a variety of formats, including Anki's native format, but also from a comma-separated values (CSV) file.
-
-A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.
+Anki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.
 
 If we have the following list of terms and definitions:
 
@@ -85,78 +52,75 @@ Scaffolding,"Support provided by teachers or peers to help students learn new sk
 ```
 
 
-If we save the contents above in a file called `anki-flashcards.csv`, we can import them into Anki by selecting the `File -> Import...` menu item.
-
+If we save the contents above in to a file, we can import them into Anki by selecting the `File -> Import...` menu item.
 :::
 
 
-:::{.assignment collapse=true}
+
+
+
 ## Assignment 1: Teaching AI Development Workshop
-### Overview
-Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.
 
-### Context
-Many university lecturers are interested in leveraging AI to enhance their teaching but may lack the technical knowledge to develop their own tools. You have been provided with example code ({{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)) that creates Anki flashcards from teaching materials using the OpenAI API.
+Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a 20-minute presentation of your workshop concept.
 
-### Instructions
-1. Read the [instructions](assignments/index.qmd) for the assignment.
-2. Download the {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip) and unzip it.
-3. Follow the instructions in the code to run the Anki flashcard generator.
-4. Write a 30-minute presentation of your workshop concept.
-5. Present your workshop concept to the class.
+:::{.callout-note title="Details" collapse=true}
 
+### Assignment 1: Teaching AI Development Workshop
+Design and present your approach for teaching lecturers how to create AI-powered educational tools.
 
-Present your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises.
-
-:::{.reflect}
-## Notes
-- The current code is a starting point---there are many edge cases that are not handled.
-- Feel free to make suggestions on how to improve the code.
-- Consider that participants may not have much (or indeed any) experience with Python.
-- Consider how to generate questions for a specific level of knowledge.
+[View Assignment Details](assignments/assignment-1/index.qmd) {{< bi link >}}
 :::
 
+:::{.caution title="Important" collapse=true}
+
+We do not expect you to present or explain code during your presentation. Instead, your presentation should focus on:
+
+- Your conceptual approach to teaching AI development
+- Your educational philosophy and teaching methods
+- A thoughtful discussion of the possibilities and limitations of using AI in education
+- Your strategies for making technical concepts accessible to non-technical audiences
+
+The provided code and materials are meant to help you understand the technical foundation, but your presentation should focus on the bigger picture of effectively teaching and implementing AI tools in higher education.
 :::
 
 
-:::{.assignment collapse=true}
+
+
+<!-- ----- -->
+
+
+
+
 ## Assignment 2: Quality Control for AI-Generated Content
 
-Candidates design a system for evaluating and improving AI-generated flashcard quality
-They should present methods for quality assessment, automated evaluation, and improvement
-Focus is on defining quality criteria, implementing quality metrics, and validating educational value
-Uses the same Python code as a starting point
-Tests technical depth, systematic thinking, and understanding of educational assessment
+:::{.callout-note title="Details" collapse=true}
+### Assignment 2: Quality Control for AI-Generated Content
+Develop and present a system for ensuring the quality of AI-generated educational materials.
 
-### Overview
-Your task is to design and present a system for evaluating and improving the quality of AI-generated flashcards. You will present your concept to the hiring committee in a 30-minute presentation, followed by 10 minutes of discussion.
+[View Assignment Details](assignments/assignment-2/index.qmd) {{< bi link >}}
 
-
-
-### Context
-The provided Python script (generate-anki-deck.py) creates Anki flashcards from teaching materials using the OpenAI API. While the system generates flashcards efficiently, ensuring their educational quality and accuracy is crucial for effective learning.
-
-### Your Task
-Design and present a systematic approach for:
-
-- Evaluating the quality of AI-generated flashcards
-- Implementing automated quality control measures
-- Improving the generation process based on quality metrics
-
-### Instructions
-1. Read the [instructions](assignments/index.qmd) for the assignment.
-2. Download the {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip) and unzip it.
-3. Follow the instructions in the code to run the Anki flashcard generator.
-4. Write a 30-minute presentation of your workshop concept.
-5. Present your workshop concept to the class.
-
-
-Present your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises
-
-:::{.reflect}
-## Notes
-- The current code is a starting point---there are many edge cases that are not handled.
-- Feel free to make suggestions on how to improve the code.
-- Consider that participants may not have much (or indeed any) experience with Python.
 :::
+
+:::{.callout-caution title="Important" collapse=true}
+
 :::
+
+## Resources
+
+We provide the following materials to help you complete your chosen assignment:
+
+- Python code for generating Anki flashcards: {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)
+
+
+
+## Next Steps
+
+1. Review both assignments carefully
+2. Select your preferred assignment
+3. Download and explore the provided code
+4. Prepare your presentation
+
+## Questions?
+
+If you need any clarification or have questions, please contact:
+[andrew.ellis@bfh.ch](mailto:andrew.ellis@bfh.ch)
