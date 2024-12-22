@@ -2,7 +2,7 @@
 title: "AI Expert Position Assessment - Round 2"
 format:
   html:
-    toc: false
+    toc: true
 ---
 
 # Welcome to Round 2
@@ -16,10 +16,23 @@ For this round, you will:
 1. Choose **one** of the two assignments detailed below
 2. Prepare and deliver a 20-minute presentation
 
-Both assignments involve working with the OpenAI API to generate Anki flashcards using structured output. Before reviewing the assignments, we recommend reading the background information about Anki flashcards.
+Both assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:
+
+- Teaching AI Development (Workshop Design)
+- Quality Assurance for AI-Generated Content
+
+For both assignments, we provide the following code examples:
+
+- [Structured Output](notebooks/structured-output.ipynb): Example code for generating structured output from an LLM
+- [Generate Anki Deck](notebooks/generate-anki-deck.ipynb): Example code for generating Anki flashcards using structured output
+
+Python code is provided here: {{<bi download >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip). Installation instructions are provided in the `README.md` file.
+
+Before reviewing the assignments, we recommend reading the background information about Anki flashcards.
+
 
 :::{.callout-note title="Background: Anki Flashcards" collapse=true}
-
+## Background: Anki Flashcards
 [Anki](https://apps.ankiweb.net/) is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user's performance. This is thought to ensure that information is reinforced before it is forgotten.
 
 One of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.
@@ -56,6 +69,38 @@ If we save the contents above in to a file, we can import them into Anki by sele
 :::
 
 
+## Important Information 
+:::{.callout-caution title="Important Information" collapse=true}
+
+
+### Presentation Focus
+Your 20-minute presentation should focus on high-level concepts rather than technical implementation details. You do not need to present or explain code during your presentation. Key areas to address include:
+
+- Your conceptual approach to either:
+  - Teaching AI development to educators, or 
+  - Developing quality control systems for AI-generated content
+- Your educational philosophy and teaching methodology
+- A critical analysis of AI's potential and limitations in education
+- Specific strategies for making complex technical concepts accessible to non-technical audiences
+
+### Time Investment & Preparation
+- Recommended total time investment: ~10 hours
+<!-- - We suggest allocating your time across:
+  - Understanding the technical foundation (~2 hours)
+  - Developing your conceptual framework (~3 hours)
+  - Preparing presentation materials (~3 hours)
+  - Practice and refinement (~2 hours) -->
+
+### Assessment Focus
+While we provide example code and technical materials, your presentation will be evaluated primarily on:
+
+- Clarity of your educational approach
+- Effectiveness of your teaching strategies
+- Understanding of AI's role in education
+- Ability to communicate complex ideas to diverse audiences
+
+:::
+
 
 
 
@@ -63,24 +108,48 @@ If we save the contents above in to a file, we can import them into Anki by sele
 
 Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a 20-minute presentation of your workshop concept.
 
+
+
 :::{.callout-note title="Details" collapse=true}
 
-### Assignment 1: Teaching AI Development Workshop
-Design and present your approach for teaching lecturers how to create AI-powered educational tools.
+### Context 
 
-[View Assignment Details](assignments/assignment-1/index.qmd) {{< bi link >}}
-:::
+- Many lecturers are interested in using AI to enhance their teaching
+- Most lack technical knowledge to develop their own AI tools
+- Wide range of technical abilities among lecturers
+- Need for practical, hands-on learning approaches
+- Limited time for training (3-hour workshop format)
+- Requirement for immediate practical application
 
-:::{.caution title="Important" collapse=true}
+### Your Task
+Design and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.
 
-We do not expect you to present or explain code during your presentation. Instead, your presentation should focus on:
+### Workshop Goals
+Participants should learn to:
 
-- Your conceptual approach to teaching AI development
-- Your educational philosophy and teaching methods
-- A thoughtful discussion of the possibilities and limitations of using AI in education
-- Your strategies for making technical concepts accessible to non-technical audiences
+- Set up a Python environment for working with the OpenAI API
+- Use the OpenAI API to generate flashcards from educational content
+- Export generated flashcards to CSV format for Anki import
 
-The provided code and materials are meant to help you understand the technical foundation, but your presentation should focus on the bigger picture of effectively teaching and implementing AI tools in higher education.
+### Presentation Requirements
+
+Duration: 20 minutes presentation + 10 minutes Q&A
+Include:
+
+- Workshop structure and timeline
+- Teaching approach for different skill levels
+- Hands-on exercises
+- Approach to dealing with technical issues
+- Approach to dealing with questions about LLMs
+
+
+### Evaluation Criteria
+
+- Clear teaching strategy
+- Technical accuracy
+- Ability to explain complex concepts
+- Practical feasibility
+- Engagement with audience needs
 :::
 
 
@@ -93,29 +162,52 @@ The provided code and materials are meant to help you understand the technical f
 
 ## Assignment 2: Quality Control for AI-Generated Content
 
-:::{.callout-note title="Details" collapse=true}
-### Assignment 2: Quality Control for AI-Generated Content
 Develop and present a system for ensuring the quality of AI-generated educational materials.
 
-[View Assignment Details](assignments/assignment-2/index.qmd) {{< bi link >}}
+:::{.callout-note title="Details" collapse=true}
 
+### Context 
+- There's a growing need for quality control in AI-generated educational content
+- Ensuring educational effectiveness of AI-generated content is a challenge
+- Developing clear quality metrics is crucial
+
+### Your Task
+Design and present a concept for a system that evaluates and improves the quality of AI-generated Anki flashcards. Feel free to use the example code provided to help you. You may also present your ideas for how to improve the example code.
+
+
+### System Goals
+Build a quality control system that:
+
+- Evaluates the educational effectiveness of generated flashcards
+- Ensures accuracy and appropriateness of content
+- Provides methods for improvement and iteration
+
+### Presentation Requirements
+
+Duration: 20 minutes presentation + 10 minutes Q&A
+Include:
+
+- Quality assessment criteria
+- Technical implementation approach
+- Methods for automated evaluation
+- Examples of quality improvements
+
+
+### Evaluation Criteria
+
+- Technical feasibility
+- Quality metrics design
+- Consideration of educational effectiveness limitations of LLMs
+- Ability to explain complex concepts
 :::
 
-:::{.callout-caution title="Important" collapse=true}
 
-:::
-
-## Resources
-
-We provide the following materials to help you complete your chosen assignment:
-
-- Python code for generating Anki flashcards: {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)
 
 
 
 ## Next Steps
 
-1. Review both assignments carefully
+1. Review both assignments
 2. Select your preferred assignment
 3. Download and explore the provided code
 4. Prepare your presentation
