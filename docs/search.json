@@ -42,7 +42,7 @@
   {
     "objectID": "notebooks/setup-openai.html",
     "href": "notebooks/setup-openai.html",
-    "title": "AI Education Assignments 2025",
+    "title": "Round 2: Assignments",
     "section": "",
     "text": "from dotenv import load_dotenv\nfrom openai import OpenAI \n\n\nload_dotenv()\n\nTrue\n\n\n\nclient = OpenAI()\n\n\nresponse = client.chat.completions.create(\n    model=\"gpt-4o-mini\",\n    messages=[{\"role\": \"system\", \"content\": \"You are a helpful assistant.\"}, \n              {\"role\": \"user\", \"content\": \"What is the weather in Bern?\"}]\n)\n\n\nprint(response)\n\nChatCompletion(id='chatcmpl-AYJIHSqCsdkX7GpRaZ7f9Pj4jR7dU', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='I’m unable to provide real-time weather updates. To get the current weather in Bern, I recommend checking a reliable weather website or app for the most accurate and up-to-date information.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))], created=1732740681, model='gpt-4o-mini-2024-07-18', object='chat.completion', service_tier=None, system_fingerprint='fp_0705bf87c0', usage=CompletionUsage(completion_tokens=37, prompt_tokens=24, total_tokens=61, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))\n\n\n\nprint(response.choices[0].message.content)\n\nI’m unable to provide real-time weather updates. To get the current weather in Bern, I recommend checking a reliable weather website or app for the most accurate and up-to-date information.\n\n\n\n\n\n Back to top"
   },
@@ -89,102 +89,14 @@
     "text": "Generating multiple responses\nWe can also generate multiple responses from the model by setting the n parameter to a value greater than 1. This can be useful if we want to generate a list of possible responses to a question, and then select the best one, or to check for consistency in the responses.\n\nfrom dotenv import load_dotenv\nfrom openai import OpenAI \n\nload_dotenv()\n\n\nclient = OpenAI()\n\n\nsystem_prompt = \"\"\"Act as a music teacher. Keep your responses very short and to the point.\"\"\"\n\nuser_message = \"Explain the difference between a major and minor scale\"\n\n\nresponses = client.chat.completions.create(\n        model=\"gpt-4o-mini\",\n        messages=[\n            {\n                \"role\": \"system\",\n                \"content\": [\n                    {\n                        \"type\": \"text\",\n                        \"text\": system_prompt\n                    }\n                ]\n            },\n            {\n                \"role\": \"user\",\n                \"content\": [\n                    {\n                        \"type\": \"text\",\n                        \"text\": user_message\n                    }\n                ]\n            }\n        ],\n        temperature=1,\n        max_tokens=512,\n        top_p=1,\n        n = 3\n    )\n\nNow we can choose one of the responses.\n\nimport textwrap\n\ntext = responses.choices[0].message.content\n\nwrapped_text = textwrap.fill(text, width=80)\nprint(wrapped_text)\n\nA major scale has a happy, bright sound and follows the pattern: whole, whole,\nhalf, whole, whole, whole, half. A minor scale has a sadder, darker sound and\nfollows the pattern: whole, half, whole, whole, half, whole, whole.\n\n\nWe can also loop through the responses and print them all.\n\nfor i, response in enumerate(responses.choices):\n    text = response.message.content  # Changed from responses.choices[0] to response\n    wrapped_text = textwrap.fill(text, width=80)\n    print(f\"Response {i+1}:\\n{wrapped_text}\\n\")\n\nResponse 1:\nA major scale has a happy, bright sound and follows the pattern: whole, whole,\nhalf, whole, whole, whole, half. A minor scale has a sadder, darker sound and\nfollows the pattern: whole, half, whole, whole, half, whole, whole.\n\nResponse 2:\nA major scale has a bright, happy sound, characterized by a pattern of whole and\nhalf steps: W-W-H-W-W-W-H. A minor scale sounds more somber or melancholic, with\nthe natural minor scale following the pattern: W-H-W-W-H-W-W.\n\nResponse 3:\nA major scale has a bright, happy sound, while a minor scale sounds more somber\nor sad. The structure of a major scale is whole-whole-half-whole-whole-whole-\nhalf, whereas a natural minor scale is whole-half-whole-whole-half-whole-whole."
   },
   {
-    "objectID": "assignments/index.html",
-    "href": "assignments/index.html",
-    "title": "Overview: Anki flashcards",
+    "objectID": "examples/index.html",
+    "href": "examples/index.html",
+    "title": "Examples",
     "section": "",
-    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.",
+    "text": "Here you will find examples of generating structured output using the OpenAI API, and using structured output to create an Anki flashcard generator.\n\nGenerating structured output\nGenerating Anki flashcards\n\n\n\n\n Back to topReuseCC BY 4.0",
     "crumbs": [
-      "Assignments",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "assignments/index.html#background",
-    "href": "assignments/index.html#background",
-    "title": "Overview: Anki flashcards",
-    "section": "",
-    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.",
-    "crumbs": [
-      "Assignments",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "assignments/index.html#flashcards",
-    "href": "assignments/index.html#flashcards",
-    "title": "Overview: Anki flashcards",
-    "section": "Flashcards",
-    "text": "Flashcards\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards in a variety of formats, including Anki’s native format, but also from a comma-separated values (CSV) file.\nA CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in a file called anki-flashcards.csv, we can import them into Anki by selecting the File -&gt; Import... menu item.",
-    "crumbs": [
-      "Assignments",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "assignments/index.html#workshop",
-    "href": "assignments/index.html#workshop",
-    "title": "Overview: Anki flashcards",
-    "section": "Workshop",
-    "text": "Workshop\nAssume you are giving a 3-hour workshop to lecturers at a university. The goal of this workshop is to teach them how to use an LLM to generate an Anki deck of flashcards for their students. For this, you will need to instruct lecturers on the following:\n\nhow to set up an Python environment with the necessary libraries\nhow to set up an OpenAI API key\nhow to use the OpenAI API\nhow to create a prompt to extract pairs of questions and answers from the teaching material\nhow to call the LLM with the prompt\nhow to use structured outputs to control the format of the LLM’s response",
-    "crumbs": [
-      "Assignments",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "assignments/index.html#structured-output",
-    "href": "assignments/index.html#structured-output",
-    "title": "Overview: Anki flashcards",
-    "section": "Structured output",
-    "text": "Structured output\nYou can read more about generating structured output here:\n Structured output\n\nWorkshop description\n\nThe goal of this project is to create a set of flashcards based on your some teaching material, and to save these in a CSV file that can be imported into Anki.\n\n\nWe will use the following teaching material: four essays about different musical eras (e.g. Baroque, Classical, Romantic, and Modern). These were generated using an LLM, and haven’t been verified for accuracy, but they should give you an idea of what you can do with an LLM.\n\n\nWe will first use an LLM, either GPT-4o or GPT-4o Mini, to extract pairs of questions and answers from the teaching material. Additionally, we can also extract tags for each flashcard, which we can use to categorise the flashcards later.\n\n\nYou will learn how to:\n\n\n\ncreate suitable system and user messages for an LLM\ncreate a prompt to extract pairs of questions and answers from the &gt; teaching material\nwrite a function to call an LLM with the prompt\nuse structured outputs to control the format of the LLM’s response to:\n\ndefine a pydantic model to describe the format of the desired response\ncall the LLM with the structured output format",
-    "crumbs": [
-      "Assignments",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-1/index.html",
-    "href": "assignments/assignment-1/index.html",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "",
-    "text": "Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 1: Teaching AI Development Workshop"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-1/index.html#overview",
-    "href": "assignments/assignment-1/index.html#overview",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "",
-    "text": "Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 1: Teaching AI Development Workshop"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-1/index.html#context",
-    "href": "assignments/assignment-1/index.html#context",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "Context",
-    "text": "Context\nMany university lecturers are interested in leveraging AI to enhance their teaching but may lack the technical knowledge to develop their own tools. You have been provided with example code ( anki-deck-generator.zip) that creates Anki flashcards from teaching materials using the OpenAI API.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 1: Teaching AI Development Workshop"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-1/index.html#instructions",
-    "href": "assignments/assignment-1/index.html#instructions",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "Instructions",
-    "text": "Instructions\n\nRead the instructions for the assignment.\nDownload the  anki-deck-generator.zip and unzip it.\nFollow the instructions in the code to run the Anki flashcard generator.\nWrite a 30-minute presentation of your workshop concept.\nPresent your workshop concept to the class.\n\nPresent your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises.\n\n\n\n\n\n\nNotes\n\n\n\n\nThe current code is a starting point—there are many edge cases that are not handled.\nFeel free to make suggestions on how to improve the code.\nConsider that participants may not have much (or indeed any) experience with Python.\nConsider how to generate questions for a specific level of knowledge.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 1: Teaching AI Development Workshop"
+      "Example code",
+      "Examples"
     ]
   },
   {
@@ -192,21 +104,42 @@
     "href": "index.html",
     "title": "AI Expert Position Assessment - Round 2",
     "section": "",
-    "text": "We look forward to seeing your innovative approach to integrating AI technology in higher education. In your role as an AI Expert at our university, you will be instrumental in educating lecturers on AI applications for teaching and helping develop AI-powered educational tools.\n\n\nFor this round, you will:\n\nChoose one of the two assignments detailed below\nPrepare and deliver a 20-minute presentation\n\nBoth assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:\n\nTeaching AI Development (Workshop Design)\nQuality Assurance for AI-Generated Content\n\nFor both assignments, we provide the following code examples:\n\nStructured Output: Example code for generating structured output from an LLM\nGenerate Anki Deck: Example code for generating Anki flashcards using structured output\n\nPython code is provided here:  anki-deck-generator.zip. Installation instructions are provided in the README.md file.\nBefore reviewing the assignments, we recommend reading the background information about Anki flashcards.\n\n\n\n\n\n\nBackground: Anki Flashcards\n\n\n\n\n\n\nAnki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in to a file, we can import them into Anki by selecting the File -&gt; Import... menu item.\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant Information\n\n\n\n\n\n\n\nYour 20-minute presentation should focus on high-level concepts rather than technical implementation details. You do not need to present or explain code during your presentation. Key areas to address include:\n\nYour conceptual approach to either:\n\nTeaching AI development to educators, or\nDeveloping quality control systems for AI-generated content\n\nYour educational philosophy and teaching methodology\nA critical analysis of AI’s potential and limitations in education\nSpecific strategies for making complex technical concepts accessible to non-technical audiences\n\n\n\n\n\nRecommended total time investment: ~10 hours \n\n\n\n\nWhile we provide example code and technical materials, your presentation will be evaluated primarily on:\n\nClarity of your educational approach\nEffectiveness of your teaching strategies\nUnderstanding of AI’s role in education\nAbility to communicate complex ideas to diverse audiences\n\n\n\n\n\n\n\n\nDemonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a 20-minute presentation of your workshop concept.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\n\nMany lecturers are interested in using AI to enhance their teaching\nMost lack technical knowledge to develop their own AI tools\nWide range of technical abilities among lecturers\nNeed for practical, hands-on learning approaches\nLimited time for training (3-hour workshop format)\nRequirement for immediate practical application\n\n\n\n\nDesign and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.\n\n\n\nParticipants should learn to:\n\nSet up a Python environment for working with the OpenAI API\nUse the OpenAI API to generate flashcards from educational content\nExport generated flashcards to CSV format for Anki import\n\n\n\n\nDuration: 20 minutes presentation + 10 minutes Q&A Include:\n\nWorkshop structure and timeline\nTeaching approach for different skill levels\nHands-on exercises\nApproach to dealing with technical issues\nApproach to dealing with questions about LLMs\n\n\n\n\n\nClear teaching strategy\nTechnical accuracy\nAbility to explain complex concepts\nPractical feasibility\nEngagement with audience needs\n\n\n\n\n\n\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\n\nThere’s a growing need for quality control in AI-generated educational content\nEnsuring educational effectiveness of AI-generated content is a challenge\nDeveloping clear quality metrics is crucial\n\n\n\n\nDesign and present a concept for a system that evaluates and improves the quality of AI-generated Anki flashcards. Feel free to use the example code provided to help you. You may also present your ideas for how to improve the example code.\n\n\n\nBuild a quality control system that:\n\nEvaluates the educational effectiveness of generated flashcards\nEnsures accuracy and appropriateness of content\nProvides methods for improvement and iteration\n\n\n\n\nDuration: 20 minutes presentation + 10 minutes Q&A Include:\n\nQuality assessment criteria\nTechnical implementation approach\nMethods for automated evaluation\nExamples of quality improvements\n\n\n\n\n\nTechnical feasibility\nQuality metrics design\nConsideration of educational effectiveness limitations of LLMs\nAbility to explain complex concepts\n\n\n\n\n\n\n\n\n\nReview both assignments\nSelect your preferred assignment\nDownload and explore the provided code\nPrepare your presentation\n\n\n\n\nIf you need any clarification or have questions, please contact: andrew.ellis@bfh.ch"
+    "text": "We look forward to seeing your innovative approach to integrating AI technology in higher education. In your role as an AI Expert at our university, you will be instrumental in educating lecturers on AI applications for teaching and helping develop AI-powered educational tools.\n\n\nFor this round, you will:\n\nChoose one of the two assignments detailed below\nPrepare and deliver a 20-minute presentation in person, followed by a discussion. The presentation format is up to you (screen/projector are available).\n\nBoth assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:\n\nTeaching AI Development (Workshop Design)\nQuality Assurance for AI-Generated Content\n\nFor both assignments, we provide the code examples for generating structured output from an LLM, and for using structured output to generate Anki flashcards.\n\nStructured Output: Example code for generating structured output from an LLM\nGenerate Anki Deck: Example code for generating Anki flashcards using structured output\n\nPython code is provided here:  anki-deck-generator.zip. Installation instructions are provided in the README.md file.\nBefore reviewing the assignments, we recommend reading the background information about Anki flashcards.\n\n\n\n\n\n\nBackground: Anki Flashcards\n\n\n\n\n\n\nAnki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in to a file, we can import them into Anki by selecting the File -&gt; Import... menu item.\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant Information\n\n\n\n\n\n\n\nYour presentation should focus on high-level concepts rather than technical implementation details. We don’t expect you to create new code, or to modify or improve the example code. Neither do you need to present a live code demo. Key areas to address include:\n\nYour conceptual approach to either:\n\nTeaching AI development to educators, or\nDeveloping quality control systems for AI-generated content\n\nYour educational philosophy and teaching methodology\nA critical analysis of AI’s potential and limitations in education\nSpecific strategies for making complex technical concepts accessible to non-technical audiences\n\n\n\n\n\nRecommended total time investment: ~10 hours \n\n\n\n\nWhile we provide example code and technical materials, your presentation will be evaluated primarily on:\n\nClarity of your educational approach\nEffectiveness of your teaching strategies\nUnderstanding of AI’s role in education\nAbility to communicate complex ideas to diverse audiences\n\n\n\n\n\n\n\n\nDemonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a presentation of your workshop concept.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\nMany lecturers want to use AI in teaching but lack technical expertise. With varying technical abilities among faculty and limited training time, we need practical, hands-on approaches that enable immediate classroom application within a 3-hour workshop format.\n\n\n\nDesign and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.\n\n\n\nParticipants should learn to:\n\nSet up a Python environment for working with the OpenAI API\nUse the OpenAI API to generate flashcards from educational content\nExport generated flashcards to CSV format for Anki import\n\n\n\n\nInclude:\n\nWorkshop structure and timeline\nTeaching approach for different skill levels\nHands-on exercises\nApproach to dealing with technical issues\nApproach to dealing with questions about LLMs\n\n\n\n\n\nClear teaching strategy\nTechnical accuracy\nAbility to explain complex concepts\nPractical feasibility\nEngagement with audience needs\n\n\n\n\n\n\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\nAs AI-generated educational content becomes more prevalent, ensuring its quality and effectiveness has emerged as a critical challenge. Educational institutions need robust quality control systems and clear metrics to evaluate and improve these AI-generated materials.\n\n\n\nDesign and present a concept for a system that evaluates and improves the quality of AI-generated Anki flashcards. Feel free to use the example code provided to help you. You may also present your ideas for how to improve the example code.\n\n\n\nBuild a quality control system that:\n\nEvaluates the educational effectiveness of generated flashcards\nEnsures accuracy and appropriateness of content\nProvides methods for improvement and iteration\n\n\n\n\nInclude:\n\nQuality assessment criteria\nTechnical implementation approach\nMethods for automated evaluation\nExamples of quality improvements\n\n\n\n\n\nTechnical feasibility\nQuality metrics design\nConsideration of educational effectiveness limitations of LLMs\nAbility to explain complex concepts\n\n\n\n\n\n\n\n\n\nReview both assignments\nSelect your preferred assignment\nDownload and explore the provided code\nPrepare your presentation\n\n\n\n\nIf you need any clarification or have questions, please contact: andrew.ellis@bfh.ch"
   },
   {
-    "objectID": "index.html#assessment-overview",
-    "href": "index.html#assessment-overview",
-    "title": "AI Expert Position Assessment",
-    "section": "Assessment Overview",
-    "text": "Assessment Overview\nFor this round, you will:\n\nChoose one of two assignments\nPrepare a 30-minute presentation\n\nIn both assignments, we use the OpenAI API to generate Anki flashcards using structured output. You can read more about Anki flashcards and structured output on the assignments page.\n\nAssignment 1: Teaching AI Development Workshop\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\n Learn more about Assignment 1\n\n\nAssignment 2: Quality Control for AI-Generated Content\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\n Learn more about Assignment 2"
-  },
-  {
-    "objectID": "index.html#resources",
-    "href": "index.html#resources",
+    "objectID": "index.html#your-task",
+    "href": "index.html#your-task",
     "title": "AI Expert Position Assessment - Round 2",
     "section": "",
-    "text": "We provide the following materials to help you complete your chosen assignment:\n\nPython code for generating Anki flashcards:  anki-deck-generator.zip"
+    "text": "For this round, you will:\n\nChoose one of the two assignments detailed below\nPrepare and deliver a 20-minute presentation in person, followed by a discussion. The presentation format is up to you (screen/projector are available).\n\nBoth assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:\n\nTeaching AI Development (Workshop Design)\nQuality Assurance for AI-Generated Content\n\nFor both assignments, we provide the code examples for generating structured output from an LLM, and for using structured output to generate Anki flashcards.\n\nStructured Output: Example code for generating structured output from an LLM\nGenerate Anki Deck: Example code for generating Anki flashcards using structured output\n\nPython code is provided here:  anki-deck-generator.zip. Installation instructions are provided in the README.md file.\nBefore reviewing the assignments, we recommend reading the background information about Anki flashcards.\n\n\n\n\n\n\nBackground: Anki Flashcards\n\n\n\n\n\n\nAnki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in to a file, we can import them into Anki by selecting the File -&gt; Import... menu item."
+  },
+  {
+    "objectID": "index.html#background-anki-flashcards",
+    "href": "index.html#background-anki-flashcards",
+    "title": "AI Expert Position Assessment - Round 2",
+    "section": "",
+    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in to a file, we can import them into Anki by selecting the File -&gt; Import... menu item."
+  },
+  {
+    "objectID": "index.html#important-information",
+    "href": "index.html#important-information",
+    "title": "AI Expert Position Assessment - Round 2",
+    "section": "",
+    "text": "Important Information\n\n\n\n\n\n\n\nYour presentation should focus on high-level concepts rather than technical implementation details. We don’t expect you to create new code, or to modify or improve the example code. Neither do you need to present a live code demo. Key areas to address include:\n\nYour conceptual approach to either:\n\nTeaching AI development to educators, or\nDeveloping quality control systems for AI-generated content\n\nYour educational philosophy and teaching methodology\nA critical analysis of AI’s potential and limitations in education\nSpecific strategies for making complex technical concepts accessible to non-technical audiences\n\n\n\n\n\nRecommended total time investment: ~10 hours \n\n\n\n\nWhile we provide example code and technical materials, your presentation will be evaluated primarily on:\n\nClarity of your educational approach\nEffectiveness of your teaching strategies\nUnderstanding of AI’s role in education\nAbility to communicate complex ideas to diverse audiences"
+  },
+  {
+    "objectID": "index.html#assignment-1-teaching-ai-development-workshop",
+    "href": "index.html#assignment-1-teaching-ai-development-workshop",
+    "title": "AI Expert Position Assessment - Round 2",
+    "section": "",
+    "text": "Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a presentation of your workshop concept.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\nMany lecturers want to use AI in teaching but lack technical expertise. With varying technical abilities among faculty and limited training time, we need practical, hands-on approaches that enable immediate classroom application within a 3-hour workshop format.\n\n\n\nDesign and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.\n\n\n\nParticipants should learn to:\n\nSet up a Python environment for working with the OpenAI API\nUse the OpenAI API to generate flashcards from educational content\nExport generated flashcards to CSV format for Anki import\n\n\n\n\nInclude:\n\nWorkshop structure and timeline\nTeaching approach for different skill levels\nHands-on exercises\nApproach to dealing with technical issues\nApproach to dealing with questions about LLMs\n\n\n\n\n\nClear teaching strategy\nTechnical accuracy\nAbility to explain complex concepts\nPractical feasibility\nEngagement with audience needs"
+  },
+  {
+    "objectID": "index.html#assignment-2-quality-control-for-ai-generated-content",
+    "href": "index.html#assignment-2-quality-control-for-ai-generated-content",
+    "title": "AI Expert Position Assessment - Round 2",
+    "section": "",
+    "text": "Develop and present a system for ensuring the quality of AI-generated educational materials.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\nAs AI-generated educational content becomes more prevalent, ensuring its quality and effectiveness has emerged as a critical challenge. Educational institutions need robust quality control systems and clear metrics to evaluate and improve these AI-generated materials.\n\n\n\nDesign and present a concept for a system that evaluates and improves the quality of AI-generated Anki flashcards. Feel free to use the example code provided to help you. You may also present your ideas for how to improve the example code.\n\n\n\nBuild a quality control system that:\n\nEvaluates the educational effectiveness of generated flashcards\nEnsures accuracy and appropriateness of content\nProvides methods for improvement and iteration\n\n\n\n\nInclude:\n\nQuality assessment criteria\nTechnical implementation approach\nMethods for automated evaluation\nExamples of quality improvements\n\n\n\n\n\nTechnical feasibility\nQuality metrics design\nConsideration of educational effectiveness limitations of LLMs\nAbility to explain complex concepts"
   },
   {
     "objectID": "index.html#next-steps",
@@ -223,64 +156,9 @@
     "text": "If you need any clarification or have questions, please contact: andrew.ellis@bfh.ch"
   },
   {
-    "objectID": "assignments/assignment-2/index.html",
-    "href": "assignments/assignment-2/index.html",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "",
-    "text": "Candidates design a system for evaluating and improving AI-generated flashcard quality They should present methods for quality assessment, automated evaluation, and improvement Focus is on defining quality criteria, implementing quality metrics, and validating educational value Uses the same Python code as a starting point Tests technical depth, systematic thinking, and understanding of educational assessment",
-    "crumbs": [
-      "Assignments",
-      "Assignment 2: Quality Control for AI-Generated Content"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-2/index.html#overview",
-    "href": "assignments/assignment-2/index.html#overview",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Overview",
-    "text": "Overview\nYour task is to design and present a system for evaluating and improving the quality of AI-generated flashcards. You will present your concept to the hiring committee in a 30-minute presentation, followed by 10 minutes of discussion.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 2: Quality Control for AI-Generated Content"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-2/index.html#context",
-    "href": "assignments/assignment-2/index.html#context",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Context",
-    "text": "Context\nThe provided Python script (generate-anki-deck.py) creates Anki flashcards from teaching materials using the OpenAI API. While the system generates flashcards efficiently, ensuring their educational quality and accuracy is crucial for effective learning.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 2: Quality Control for AI-Generated Content"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-2/index.html#your-task",
-    "href": "assignments/assignment-2/index.html#your-task",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Your Task",
-    "text": "Your Task\nDesign and present a systematic approach for:\n\nEvaluating the quality of AI-generated flashcards\nImplementing automated quality control measures\nImproving the generation process based on quality metrics",
-    "crumbs": [
-      "Assignments",
-      "Assignment 2: Quality Control for AI-Generated Content"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-2/index.html#instructions",
-    "href": "assignments/assignment-2/index.html#instructions",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Instructions",
-    "text": "Instructions\n\nRead the instructions for the assignment.\nDownload the  anki-deck-generator.zip and unzip it.\nFollow the instructions in the code to run the Anki flashcard generator.\nWrite a 30-minute presentation of your workshop concept.\nPresent your workshop concept to the class.\n\nPresent your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises\n\n\n\n\n\n\nNotes\n\n\n\n\nThe current code is a starting point—there are many edge cases that are not handled.\nFeel free to make suggestions on how to improve the code.\nConsider that participants may not have much (or indeed any) experience with Python.",
-    "crumbs": [
-      "Assignments",
-      "Assignment 2: Quality Control for AI-Generated Content"
-    ]
-  },
-  {
     "objectID": "notebooks/examples.html",
     "href": "notebooks/examples.html",
-    "title": "AI Education Assignments 2025",
+    "title": "Round 2: Assignments",
     "section": "",
     "text": "from dotenv import load_dotenv\nfrom openai import OpenAI \nimport textwrap\n\n\nload_dotenv()\n\nTrue\n\n\n\nclient = OpenAI()\n\n\nfrom IPython.display import Markdown, display\n\ndef generate_response(user_message,\n        model=\"gpt-4o\", \n        system_prompt=\"You are a helpful assistant.\",  \n        temperature=1.0, \n        top_p=1.0, \n        max_tokens=2048):\n                      \n    response = client.chat.completions.create(\n        model=model,\n        messages=[\n            {\n                \"role\": \"system\",\n                \"content\": [\n                    {\n                        \"type\": \"text\",\n                        \"text\": system_prompt\n                    }\n                ]\n            },\n            {\n                \"role\": \"user\",\n                \"content\": [\n                    {\n                        \"type\": \"text\",\n                        \"text\": user_message\n                    }\n                ]\n            }\n        ],\n        temperature=temperature,\n        max_tokens=max_tokens,\n        top_p=top_p\n    )\n    # Get the response text\n    text = response.choices[0].message.content\n    \n    # Display as markdown instead of plain text\n    display(Markdown(text))\n\n\ngenerate_response(user_message=\"Explain the harmonic series\")\n\nThe harmonic series is the infinite series defined as the sum of the reciprocals of the positive integers:\n[ H = _{n=1}^{} = 1 + + + + + ]\nDespite each of its terms becoming smaller and smaller as ( n ) increases, the harmonic series diverges, meaning its sum grows without bound. This can be shown through several methods, one classical approach being a comparison test. For example, you can compare the harmonic series to a related series formed by grouping terms:\n[ 1 + () + ( + ) + ( + + + ) + ]\nEach group ( n ) (where ( n )) contains ( 2^{n-1} ) terms, each of which is greater than or equal to ( ), leading to the inequality:\n[ 1 + + ( + ) + ( + + + ) + &gt; 1 + + + + ]\n[ = 1 + + + + ]\nEach additional block sums to at least ( ), demonstrating that the harmonic series’ sum can exceed any finite number as more terms and further groups are added.\nFurthermore, the ( n )-th partial sum of the harmonic series, denoted ( H_n = 1 + + + + ), is approximately logarithmic in growth:\n[ H_n (n) + ]\nwhere ( ) is the Euler-Mascheroni constant, approximately 0.577. The term ( (n) ) shows how the harmonic series diverges very slowly.\n\n\n\n\n\n Back to top"
   },
@@ -364,189 +242,15 @@
   {
     "objectID": "notebooks/spacy.html",
     "href": "notebooks/spacy.html",
-    "title": "AI Education Assignments 2025",
+    "title": "Round 2: Assignments",
     "section": "",
     "text": "import spacy\n\n\n\n# Load the German SpaCy model\nnlp = spacy.load(\"de_core_news_md\")\n\n\n\n# Analyze the sentence\ntext = \"\"\"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. \nDas Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine \nprächtige Fassade und die grosszügigen\"\"\"\n\n\n\ndoc = nlp(text)\n\n\n\n# Dependency parsing and POS tagging\nfor token in doc:\n    print(f\"{token.text:15} {token.pos_:10} {token.dep_:10} {token.head.text}\")\n\nDie             DET        nk         Familie\nFamilie         NOUN       sb         lebte\n,               PUNCT      punct      Familie\ndie             PRON       sb         war\nsehr            ADV        mo         wohlhabend\nwohlhabend      ADV        pd         war\nwar             AUX        rc         Familie\n,               PUNCT      punct      lebte\nlebte           VERB       ROOT       lebte\nin              ADP        mo         lebte\neinem           DET        nk         Haus\ngrossen         ADJ        nk         Haus\nHaus            NOUN       nk         in\n.               PUNCT      punct      lebte\n\n               SPACE      dep        .\nDas             DET        nk         Haus\nHaus            NOUN       sb         stand\nstand           VERB       ROOT       stand\ninmitten        ADP        mo         stand\neines           DET        nk         Gartens\nweitläufigen    ADJ        nk         Gartens\nGartens         NOUN       nk         inmitten\n.               PUNCT      punct      stand\nEs              PRON       sb         war\nwar             AUX        ROOT       war\nbekannt         ADV        pd         war\nfür             ADP        mo         bekannt\nseine           DET        nk         Fassade\n\n               SPACE      dep        seine\nprächtige       ADJ        nk         Fassade\nFassade         NOUN       nk         für\nund             CCONJ      cd         Fassade\ndie             DET        nk         grosszügigen\ngrosszügigen    ADJ        cj         und\n\n\n\n\n# Suggest similar words or predict based on context\nsimilar_words = [word.text for word in doc if word.pos_ == \"NOUN\"]\nprint(\"Potential continuations:\", similar_words)\n\nPotential continuations: ['Familie', 'Haus', 'Haus', 'Gartens', 'Fassade']\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "notebooks/test-structured-output.html",
     "href": "notebooks/test-structured-output.html",
-    "title": "AI Education Assignments 2025",
+    "title": "Round 2: Assignments",
     "section": "",
     "text": "import os\nfrom dotenv import load_dotenv\nfrom pydantic import BaseModel\nfrom openai import OpenAI\n\n\n\n# Load environment variables from .env file\nload_dotenv()\n\n# Create OpenAI client with API key\nclient = OpenAI(api_key=os.getenv(\"OPENAI_API_KEY\"))\n\n\n\nclass CalendarEvent(BaseModel):\n    name: str\n    date: str\n    participants: list[str]\n\n\n\ncompletion = client.beta.chat.completions.parse(\n    model=\"gpt-4o-2024-08-06\",\n    messages=[\n        {\"role\": \"system\", \"content\": \"Extract the event information.\"},\n        {\"role\": \"user\", \"content\": \"Alice and Bob are going to a science fair on Friday.\"},\n    ],\n    response_format=CalendarEvent,\n)\n\nevent = completion.choices[0].message.parsed\n\n\nevent\n\nCalendarEvent(name='Science Fair', date='Friday', participants=['Alice', 'Bob'])\n\n\n\nevent.name\n\n'Science Fair'\n\n\n\nimport csv\n\n# Create a list of dictionaries from the event object\nevent_data = [event.__dict__]\n\n# Open a CSV file for writing\nwith open('events.csv', 'w', newline='') as csvfile:\n    fieldnames = event_data[0].keys()\n    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n\n    # Write the header\n    writer.writeheader()\n\n    # Write the data\n    writer.writerows(event_data)\n\n\nevent\n\nCalendarEvent(name='Science Fair', date='Friday', participants=['Alice', 'Bob'])\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "examples/index.html",
-    "href": "examples/index.html",
-    "title": "Overview: Anki flashcards",
-    "section": "",
-    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.",
-    "crumbs": [
-      "Example code",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "examples/index.html#background",
-    "href": "examples/index.html#background",
-    "title": "Overview: Anki flashcards",
-    "section": "",
-    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.",
-    "crumbs": [
-      "Example code",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "examples/index.html#flashcards",
-    "href": "examples/index.html#flashcards",
-    "title": "Overview: Anki flashcards",
-    "section": "Flashcards",
-    "text": "Flashcards\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards in a variety of formats, including Anki’s native format, but also from a comma-separated values (CSV) file.\nA CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in a file called anki-flashcards.csv, we can import them into Anki by selecting the File -&gt; Import... menu item.",
-    "crumbs": [
-      "Example code",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "examples/index.html#workshop",
-    "href": "examples/index.html#workshop",
-    "title": "Overview: Anki flashcards",
-    "section": "Workshop",
-    "text": "Workshop\nAssume you are giving a 3-hour workshop to lecturers at a university. The goal of this workshop is to teach them how to use an LLM to generate an Anki deck of flashcards for their students. For this, you will need to instruct lecturers on the following:\n\nhow to set up an Python environment with the necessary libraries\nhow to set up an OpenAI API key\nhow to use the OpenAI API\nhow to create a prompt to extract pairs of questions and answers from the teaching material\nhow to call the LLM with the prompt\nhow to use structured outputs to control the format of the LLM’s response",
-    "crumbs": [
-      "Example code",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "examples/index.html#structured-output",
-    "href": "examples/index.html#structured-output",
-    "title": "Overview: Anki flashcards",
-    "section": "Structured output",
-    "text": "Structured output\nYou can read more about generating structured output here:\n Structured output\n\nWorkshop description\n\nThe goal of this project is to create a set of flashcards based on your some teaching material, and to save these in a CSV file that can be imported into Anki.\n\n\nWe will use the following teaching material: four essays about different musical eras (e.g. Baroque, Classical, Romantic, and Modern). These were generated using an LLM, and haven’t been verified for accuracy, but they should give you an idea of what you can do with an LLM.\n\n\nWe will first use an LLM, either GPT-4o or GPT-4o Mini, to extract pairs of questions and answers from the teaching material. Additionally, we can also extract tags for each flashcard, which we can use to categorise the flashcards later.\n\n\nYou will learn how to:\n\n\n\ncreate suitable system and user messages for an LLM\ncreate a prompt to extract pairs of questions and answers from the &gt; teaching material\nwrite a function to call an LLM with the prompt\nuse structured outputs to control the format of the LLM’s response to:\n\ndefine a pydantic model to describe the format of the desired response\ncall the LLM with the structured output format",
-    "crumbs": [
-      "Example code",
-      "Overview: Anki flashcards"
-    ]
-  },
-  {
-    "objectID": "examples/assignment-1/index.html",
-    "href": "examples/assignment-1/index.html",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "",
-    "text": "Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept."
-  },
-  {
-    "objectID": "examples/assignment-1/index.html#overview",
-    "href": "examples/assignment-1/index.html#overview",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "",
-    "text": "Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept."
-  },
-  {
-    "objectID": "examples/assignment-1/index.html#context",
-    "href": "examples/assignment-1/index.html#context",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "Context",
-    "text": "Context\nMany university lecturers are interested in leveraging AI to enhance their teaching but may lack the technical knowledge to develop their own tools. You have been provided with example code ( anki-deck-generator.zip) that creates Anki flashcards from teaching materials using the OpenAI API."
-  },
-  {
-    "objectID": "examples/assignment-1/index.html#instructions",
-    "href": "examples/assignment-1/index.html#instructions",
-    "title": "Assignment 1: Teaching AI Development Workshop",
-    "section": "Instructions",
-    "text": "Instructions\n\nRead the instructions for the assignment.\nDownload the  anki-deck-generator.zip and unzip it.\nFollow the instructions in the code to run the Anki flashcard generator.\nWrite a 30-minute presentation of your workshop concept.\nPresent your workshop concept to the class.\n\nPresent your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises.\n\n\n\n\n\n\nNotes\n\n\n\n\nThe current code is a starting point—there are many edge cases that are not handled.\nFeel free to make suggestions on how to improve the code.\nConsider that participants may not have much (or indeed any) experience with Python.\nConsider how to generate questions for a specific level of knowledge."
-  },
-  {
-    "objectID": "examples/assignment-2/index.html",
-    "href": "examples/assignment-2/index.html",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "",
-    "text": "Candidates design a system for evaluating and improving AI-generated flashcard quality They should present methods for quality assessment, automated evaluation, and improvement Focus is on defining quality criteria, implementing quality metrics, and validating educational value Uses the same Python code as a starting point Tests technical depth, systematic thinking, and understanding of educational assessment"
-  },
-  {
-    "objectID": "examples/assignment-2/index.html#overview",
-    "href": "examples/assignment-2/index.html#overview",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Overview",
-    "text": "Overview\nYour task is to design and present a system for evaluating and improving the quality of AI-generated flashcards. You will present your concept to the hiring committee in a 30-minute presentation, followed by 10 minutes of discussion."
-  },
-  {
-    "objectID": "examples/assignment-2/index.html#context",
-    "href": "examples/assignment-2/index.html#context",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Context",
-    "text": "Context\nThe provided Python script (generate-anki-deck.py) creates Anki flashcards from teaching materials using the OpenAI API. While the system generates flashcards efficiently, ensuring their educational quality and accuracy is crucial for effective learning."
-  },
-  {
-    "objectID": "examples/assignment-2/index.html#your-task",
-    "href": "examples/assignment-2/index.html#your-task",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Your Task",
-    "text": "Your Task\nDesign and present a systematic approach for:\n\nEvaluating the quality of AI-generated flashcards\nImplementing automated quality control measures\nImproving the generation process based on quality metrics"
-  },
-  {
-    "objectID": "examples/assignment-2/index.html#instructions",
-    "href": "examples/assignment-2/index.html#instructions",
-    "title": "Assignment 2: Quality Control for AI-Generated Content",
-    "section": "Instructions",
-    "text": "Instructions\n\nRead the instructions for the assignment.\nDownload the  anki-deck-generator.zip and unzip it.\nFollow the instructions in the code to run the Anki flashcard generator.\nWrite a 30-minute presentation of your workshop concept.\nPresent your workshop concept to the class.\n\nPresent your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises\n\n\n\n\n\n\nNotes\n\n\n\n\nThe current code is a starting point—there are many edge cases that are not handled.\nFeel free to make suggestions on how to improve the code.\nConsider that participants may not have much (or indeed any) experience with Python."
-  },
-  {
-    "objectID": "index.html#overview-anki-flashcards",
-    "href": "index.html#overview-anki-flashcards",
-    "title": "AI Expert Position Assessment",
-    "section": "",
-    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards in a variety of formats, including Anki’s native format, but also from a comma-separated values (CSV) file.\nA CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in a file called anki-flashcards.csv, we can import them into Anki by selecting the File -&gt; Import... menu item."
-  },
-  {
-    "objectID": "index.html#your-task",
-    "href": "index.html#your-task",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "For this round, you will:\n\nChoose one of the two assignments detailed below\nPrepare and deliver a 20-minute presentation\n\nBoth assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:\n\nTeaching AI Development (Workshop Design)\nQuality Assurance for AI-Generated Content\n\nFor both assignments, we provide the following code examples:\n\nStructured Output: Example code for generating structured output from an LLM\nGenerate Anki Deck: Example code for generating Anki flashcards using structured output\n\nPython code is provided here:  anki-deck-generator.zip. Installation instructions are provided in the README.md file.\nBefore reviewing the assignments, we recommend reading the background information about Anki flashcards.\n\n\n\n\n\n\nBackground: Anki Flashcards\n\n\n\n\n\n\nAnki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in to a file, we can import them into Anki by selecting the File -&gt; Import... menu item."
-  },
-  {
-    "objectID": "index.html#available-assignments",
-    "href": "index.html#available-assignments",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "Assignment 1: Teaching AI Development Workshop\n\n\n\nDesign and present your approach for teaching lecturers how to create AI-powered educational tools.\nView Assignment Details \n\n\n\n\n\n\n\n\n\n\n\nAssignment 2: Quality Control for AI-Generated Content\n\n\n\nDevelop and present a system for ensuring the quality of AI-generated educational materials.\nView Assignment Details"
-  },
-  {
-    "objectID": "index.html#assignment-1-teaching-ai-development-workshop",
-    "href": "index.html#assignment-1-teaching-ai-development-workshop",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a 20-minute presentation of your workshop concept.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\n\nMany lecturers are interested in using AI to enhance their teaching\nMost lack technical knowledge to develop their own AI tools\nWide range of technical abilities among lecturers\nNeed for practical, hands-on learning approaches\nLimited time for training (3-hour workshop format)\nRequirement for immediate practical application\n\n\n\n\nDesign and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.\n\n\n\nParticipants should learn to:\n\nSet up a Python environment for working with the OpenAI API\nUse the OpenAI API to generate flashcards from educational content\nExport generated flashcards to CSV format for Anki import\n\n\n\n\nDuration: 20 minutes presentation + 10 minutes Q&A Include:\n\nWorkshop structure and timeline\nTeaching approach for different skill levels\nHands-on exercises\nApproach to dealing with technical issues\nApproach to dealing with questions about LLMs\n\n\n\n\n\nClear teaching strategy\nTechnical accuracy\nAbility to explain complex concepts\nPractical feasibility\nEngagement with audience needs"
-  },
-  {
-    "objectID": "index.html#assignment-2-quality-control-for-ai-generated-content",
-    "href": "index.html#assignment-2-quality-control-for-ai-generated-content",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "Develop and present a system for ensuring the quality of AI-generated educational materials.\n\n\n\n\n\n\nDetails\n\n\n\n\n\n\n\n\nThere’s a growing need for quality control in AI-generated educational content\nEnsuring educational effectiveness of AI-generated content is a challenge\nDeveloping clear quality metrics is crucial\n\n\n\n\nDesign and present a concept for a system that evaluates and improves the quality of AI-generated Anki flashcards. Feel free to use the example code provided to help you. You may also present your ideas for how to improve the example code.\n\n\n\nBuild a quality control system that:\n\nEvaluates the educational effectiveness of generated flashcards\nEnsures accuracy and appropriateness of content\nProvides methods for improvement and iteration\n\n\n\n\nDuration: 20 minutes presentation + 10 minutes Q&A Include:\n\nQuality assessment criteria\nTechnical implementation approach\nMethods for automated evaluation\nExamples of quality improvements\n\n\n\n\n\nTechnical feasibility\nQuality metrics design\nConsideration of educational effectiveness limitations of LLMs\nAbility to explain complex concepts"
-  },
-  {
-    "objectID": "index.html#background-anki-flashcards",
-    "href": "index.html#background-anki-flashcards",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "Anki is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user’s performance. This is thought to ensure that information is reinforced before it is forgotten.\nOne of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.\nHowever, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.\n\n\nThe simplest type of Anki flashcard is a pair of text fields: a question and an answer (or a term and a definition).\nAnki can import flashcards from a variety of formats, including comma-separated values (CSV) files. A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.\nIf we have the following list of terms and definitions:\n\n\n\n\n\n\n\nterm\ndefinition\n\n\n\n\nMetacognition\n“The ability to think about one’s own thinking processes”\n\n\nSelf-Regulated Learning\n“The process of taking control of and evaluating one’s own learning”\n\n\nExecutive Functions\n“Higher-order cognitive processes like working memory and cognitive flexibility”\n\n\nScaffolding\n“Support provided by teachers or peers to help students learn new skills”\n\n\n\nwe can save these in a CSV file:\nterm,definition\nMetacognition,\"The ability to think about one's own thinking processes\"\nSelf-Regulated Learning,\"The process of taking control of and evaluating one's own learning\"\nExecutive Functions,\"Higher-order cognitive processes like working memory and cognitive flexibility\"\nScaffolding,\"Support provided by teachers or peers to help students learn new skills\"\nIf we save the contents above in to a file, we can import them into Anki by selecting the File -&gt; Import... menu item."
-  },
-  {
-    "objectID": "index.html#assignment-overview",
-    "href": "index.html#assignment-overview",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "We do not expect you to present or explain code during your presentation. Instead, your presentation should focus on:\n\nYour conceptual approach to teaching AI development or developing quality control for AI-generated content\nYour educational philosophy and teaching methods\nA thoughtful discussion of the possibilities and limitations of using AI in education\nYour strategies for making technical concepts accessible to non-technical audiences\n\nThe provided code and materials are meant to help you understand the technical foundation, but your presentation should focus on the bigger picture of effectively teaching and implementing AI tools in higher education."
-  },
-  {
-    "objectID": "index.html#important-information",
-    "href": "index.html#important-information",
-    "title": "AI Expert Position Assessment - Round 2",
-    "section": "",
-    "text": "Important Information\n\n\n\n\n\n\n\nYour 20-minute presentation should focus on high-level concepts rather than technical implementation details. You do not need to present or explain code during your presentation. Key areas to address include:\n\nYour conceptual approach to either:\n\nTeaching AI development to educators, or\nDeveloping quality control systems for AI-generated content\n\nYour educational philosophy and teaching methodology\nA critical analysis of AI’s potential and limitations in education\nSpecific strategies for making complex technical concepts accessible to non-technical audiences\n\n\n\n\n\nRecommended total time investment: ~10 hours \n\n\n\n\nWhile we provide example code and technical materials, your presentation will be evaluated primarily on:\n\nClarity of your educational approach\nEffectiveness of your teaching strategies\nUnderstanding of AI’s role in education\nAbility to communicate complex ideas to diverse audiences"
   }
 ]
