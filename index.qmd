@@ -14,7 +14,7 @@ We look forward to seeing your innovative approach to integrating AI technology 
 For this round, you will:
 
 1. Choose **one** of the two assignments detailed below
-2. Prepare and deliver a 20-minute presentation
+2. Prepare and deliver a 20-minute presentation in person, followed by a discussion. The presentation format is up to you (screen/projector are available).
 
 Both assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:
 
@@ -26,7 +26,7 @@ For both assignments, we provide the code examples for generating structured out
 - [Structured Output](notebooks/structured-output.ipynb): Example code for generating structured output from an LLM
 - [Generate Anki Deck](notebooks/generate-anki-deck.ipynb): Example code for generating Anki flashcards using structured output
 
-Python code is provided here: {{<bi download >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip). Installation instructions are provided in the `README.md` file.
+Python code is provided here: {{<bi download >}} [anki-deck-generator.zip](assets/code/anki-deck-generator.zip). Installation instructions are provided in the `README.md` file.
 
 Before reviewing the assignments, we recommend reading the background information about Anki flashcards.
 
@@ -74,7 +74,7 @@ If we save the contents above in to a file, we can import them into Anki by sele
 
 
 ### Presentation Focus
-Your presentation should focus on high-level concepts rather than technical implementation details. You do not need to present or explain code during your presentation. Key areas to address include:
+Your presentation should focus on high-level concepts rather than technical implementation details. We don't expect you to create new code, or to modify or improve the example code. Neither do you need to present a live code demo. Key areas to address include:
 
 - Your conceptual approach to either:
   - Teaching AI development to educators, or 
@@ -114,12 +114,7 @@ Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard
 
 ### Context 
 
-- Many lecturers are interested in using AI to enhance their teaching
-- Most lack technical knowledge to develop their own AI tools
-- Wide range of technical abilities among lecturers
-- Need for practical, hands-on learning approaches
-- Limited time for training (3-hour workshop format)
-- Requirement for immediate practical application
+Many lecturers want to use AI in teaching but lack technical expertise. With varying technical abilities among faculty and limited training time, we need practical, hands-on approaches that enable immediate classroom application within a 3-hour workshop format.
 
 ### Your Task
 Design and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.
@@ -166,9 +161,7 @@ Develop and present a system for ensuring the quality of AI-generated educationa
 :::{.callout-note title="Details" collapse=true}
 
 ### Context 
-- There's a growing need for quality control in AI-generated educational content
-- Ensuring educational effectiveness of AI-generated content is a challenge
-- Developing clear quality metrics is crucial
+As AI-generated educational content becomes more prevalent, ensuring its quality and effectiveness has emerged as a critical challenge. Educational institutions need robust quality control systems and clear metrics to evaluate and improve these AI-generated materials.
 
 ### Your Task
 Design and present a concept for a system that evaluates and improves the quality of AI-generated Anki flashcards. Feel free to use the example code provided to help you. You may also present your ideas for how to improve the example code.
