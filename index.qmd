@@ -14,7 +14,7 @@ We look forward to seeing your innovative approach to integrating AI technology 
 For this round, you will:
 
 1. Choose **one** of the two assignments detailed below
-2. Prepare and deliver a 20-minute presentation in person, followed by a discussion. The presentation format is up to you (screen/projector are available).
+2. Prepare and deliver a 20-minute presentation in person, followed by a discussion. The presentation format is up to you (screen/projector are available). Language can be either English or German.
 
 Both assignments involve working with the OpenAI API to generate Anki flashcards using structured output. The two assignment options focus on different but complementary aspects of AI in education:
 
@@ -84,7 +84,7 @@ Your presentation should focus on high-level concepts rather than technical impl
 - Specific strategies for making complex technical concepts accessible to non-technical audiences
 
 ### Time Investment & Preparation
-- Recommended total time investment: ~10 hours
+- Recommended total time investment: <8 hours (don't spend more than 1 day on this)
 <!-- - We suggest allocating your time across:
   - Understanding the technical foundation (~2 hours)
   - Developing your conceptual framework (~3 hours)
@@ -94,7 +94,6 @@ Your presentation should focus on high-level concepts rather than technical impl
 ### Assessment Focus
 While we provide example code and technical materials, your presentation will be evaluated primarily on:
 
-- Clarity of your educational approach
 - Effectiveness of your teaching strategies
 - Understanding of AI's role in education
 - Ability to communicate complex ideas to diverse audiences
