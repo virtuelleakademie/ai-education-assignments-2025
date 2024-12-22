@@ -46,26 +46,6 @@ website:
           - text: "anki-deck-generator.zip" 
             file: assets/anki-deck-generator.zip
 
-      # - icon: wrench-adjustable #tools
-      #   text: "Resources"
-      #   menu:
-      #     - text: "Guides"
-      #       file: resources/resources.qmd
-      #     - text: "Tools"
-      #       file: resources/tools.qmd
-
-    # tools:
-    #   - icon: lightbulb-fill
-    #     text: Knowledge Base
-    #     href: https://virtuelleakademie.ch/knowledge-base/
-
-    #   - icon: github
-    #     menu:
-    #       - text: Source code
-    #         url:  https://github.com/virtuelleakademie/ai-education-assignments-2025/
-    #       - text: Report an issue
-    #         url:  https://github.com/virtuelleakademie/ai-education-assignments-2025/issues
-            
   sidebar:
     - title: "Example code"
       style: "docked"
@@ -97,9 +77,10 @@ format:
     anchor-sections: true
     smooth-scroll: true
     linkcolor: rebeccapurple
+    code-fold: false
     code-link: true
-    callout-appearance: default
-    callout-icon: false
+    callout-appearance: minimal
+    callout-icon: true
 
 comments:
   hypothesis: 
