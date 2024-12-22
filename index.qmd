@@ -1,39 +1,10 @@
 ---
-# title: "AI-Enhanced Journal Club"
-# title: "Virtuelle Akademie"
+title: "AI Expert Position Assessment"
 format:
   html:
     toc: false
-# about:
-#   template: jolla #trestles
-# #   image: "assets/logo.png"
-#   links:
-#     - icon: magic
-#       text: Virtuelle Akademie
-#       href: https://virtuelleakademie.ch/
-#     # - icon: lightbulb-fill
-#     #   text: Knowledge Base
-#     #   href: https://virtuelleakademie.ch/knowledge-base/
-#     # - icon: mortarboard-fill
-#     #   text: Weiterbildungsangebote
-#     #   href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
-#     - icon: inbox-fill
-#       text: Email
-#       href: mailto:andrew.ellis@bfh.ch
 ---
 
-
-
-<!-- # QR Code
-
-{{< qrcode https://virtuelleakademie.github.io/ai-education-assignments-2025/ width=200 height=200 colorDark='#000000' >}}
-
-<br> 
-
-{{< bi link >}} [virtuelleakademie.github.io/ai-education-assignments-2025](https://virtuelleakademie.github.io/ai-education-assignments-2025/) -->
-
-
-# AI Expert Position Assessment
 
 We're excited to see how you approach the integration of AI technology in higher education. As an AI Expert at our university, you will play a key role in teaching lecturers about AI applications in education and developing AI-based tools for teaching and learning.
 
@@ -72,3 +43,120 @@ We provide the following materials:
 
 ## Questions?
 If you have any questions about the assignments or require additional information, please contact us at [andrew.ellis@bfh.ch](mailto:andrew.ellis@bfh.ch).
+
+
+
+:::{.background collapse=true}
+## Overview: Anki flashcards
+
+
+### Background
+[Anki](https://apps.ankiweb.net/) is a powerful open-source flashcard program that uses the principles of spaced repetition and active recall to enhance learning and long-term retention. It presents flashcards at optimal intervals, adjusting the frequency of review based on the user's performance. This is thought to ensure that information is reinforced before it is forgotten.
+
+One of the key strengths of Anki is its flexibility. Users can create their own decks of flashcards tailored to their specific learning needs, or they can download pre-made decks from shared repositories covering a vast array of subjects, from languages and vocabulary to complex medical terminology.
+
+However, Anki requires a lot of manual work to create effective flashcards. In this assignment, we will explore how we can use an LLM to generate the flashcards for us.
+
+
+### Flashcards
+The simplest type of Anki flashcard is a pair of text fields: a **question** and an **answer** (or a *term* and a *definition*).
+
+Anki can import flashcards in a variety of formats, including Anki's native format, but also from a comma-separated values (CSV) file.
+
+A CSV file is a text file that uses a delimiter, e.g. a comma, to separate columns. Each line of the file is a row, and each row has of one or more columns.
+
+If we have the following list of terms and definitions:
+
+| term | definition |
+|------|------------|
+| Metacognition | "The ability to think about one's own thinking processes" |
+| Self-Regulated Learning | "The process of taking control of and evaluating one's own learning" |
+| Executive Functions | "Higher-order cognitive processes like working memory and cognitive flexibility" |
+| Scaffolding | "Support provided by teachers or peers to help students learn new skills" |
+
+we can save these in a CSV file:
+
+```
+term,definition
+Metacognition,"The ability to think about one's own thinking processes"
+Self-Regulated Learning,"The process of taking control of and evaluating one's own learning"
+Executive Functions,"Higher-order cognitive processes like working memory and cognitive flexibility"
+Scaffolding,"Support provided by teachers or peers to help students learn new skills"
+```
+
+
+If we save the contents above in a file called `anki-flashcards.csv`, we can import them into Anki by selecting the `File -> Import...` menu item.
+
+:::
+
+
+:::{.assignment collapse=true}
+## Assignment 1: Teaching AI Development Workshop
+### Overview
+Your task is to demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. You will give a 30-minute presentation of your workshop concept.
+
+### Context
+Many university lecturers are interested in leveraging AI to enhance their teaching but may lack the technical knowledge to develop their own tools. You have been provided with example code ({{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip)) that creates Anki flashcards from teaching materials using the OpenAI API.
+
+### Instructions
+1. Read the [instructions](assignments/index.qmd) for the assignment.
+2. Download the {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip) and unzip it.
+3. Follow the instructions in the code to run the Anki flashcard generator.
+4. Write a 30-minute presentation of your workshop concept.
+5. Present your workshop concept to the class.
+
+
+Present your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises.
+
+:::{.reflect}
+## Notes
+- The current code is a starting point---there are many edge cases that are not handled.
+- Feel free to make suggestions on how to improve the code.
+- Consider that participants may not have much (or indeed any) experience with Python.
+- Consider how to generate questions for a specific level of knowledge.
+:::
+
+:::
+
+
+:::{.assignment collapse=true}
+## Assignment 2: Quality Control for AI-Generated Content
+
+Candidates design a system for evaluating and improving AI-generated flashcard quality
+They should present methods for quality assessment, automated evaluation, and improvement
+Focus is on defining quality criteria, implementing quality metrics, and validating educational value
+Uses the same Python code as a starting point
+Tests technical depth, systematic thinking, and understanding of educational assessment
+
+### Overview
+Your task is to design and present a system for evaluating and improving the quality of AI-generated flashcards. You will present your concept to the hiring committee in a 30-minute presentation, followed by 10 minutes of discussion.
+
+
+
+### Context
+The provided Python script (generate-anki-deck.py) creates Anki flashcards from teaching materials using the OpenAI API. While the system generates flashcards efficiently, ensuring their educational quality and accuracy is crucial for effective learning.
+
+### Your Task
+Design and present a systematic approach for:
+
+- Evaluating the quality of AI-generated flashcards
+- Implementing automated quality control measures
+- Improving the generation process based on quality metrics
+
+### Instructions
+1. Read the [instructions](assignments/index.qmd) for the assignment.
+2. Download the {{<bi file-code >}} [anki-deck-generator.zip](assets/anki-deck-generator.zip) and unzip it.
+3. Follow the instructions in the code to run the Anki flashcard generator.
+4. Write a 30-minute presentation of your workshop concept.
+5. Present your workshop concept to the class.
+
+
+Present your concept for a 3-hour workshop, including structure, teaching methods, and hands-on exercises
+
+:::{.reflect}
+## Notes
+- The current code is a starting point---there are many edge cases that are not handled.
+- Feel free to make suggestions on how to improve the code.
+- Consider that participants may not have much (or indeed any) experience with Python.
+:::
+:::
