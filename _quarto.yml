@@ -44,7 +44,7 @@ website:
         text: "Download code" # {{< fa person-chalkboard >}}
         menu:
           - text: "anki-deck-generator.zip" 
-            file: assets/anki-deck-generator.zip
+            file: assets/code/anki-deck-generator.zip
 
   sidebar:
     - title: "Example code"
@@ -55,9 +55,6 @@ website:
         - examples/index.qmd
         - notebooks/structured-output.ipynb
         - notebooks/generate-anki-deck.ipynb
-        # - assignments/index.qmd
-        # - assignments/assignment-1/index.qmd
-        # - assignments/assignment-2/index.qmd
 
 
 page-footer:
