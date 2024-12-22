@@ -8,14 +8,14 @@ project:
   output-dir: docs
   render:
     - index.qmd
-    - assignments/**/*.qmd
+    - examples/**/*.qmd
     # - projects/**/*.qmd
     - notebooks/*.ipynb
     # - "!tutorials/tutorial-1/index.qmd"
     # - slides/openai-platform/index.qmd
 
 website:
-  title: "AI Education Assignments 2025"
+  title: "Round 2: Assignments"
   site-url: https://virtuelleakademie.github.io/ai-education-assignments-2025
   # repo-url: https://github.com/virtuelleakademie/ai-education-assignments-2025
   # repo-actions: [edit, issue]
@@ -33,21 +33,17 @@ website:
     background: light
     left:
       - icon: card-list
-        href: assignments/index.qmd
-        text: Assignments
+        href: examples/index.qmd
+        text: Example code
 
       # - icon: code-square
       #   href: projects/anki/index.qmd
       #   text: Projects
 
-      - icon:  code-square
-        text: "Code" # {{< fa person-chalkboard >}}
+      - icon:  download
+        text: "Download code" # {{< fa person-chalkboard >}}
         menu:
-          - text: "{{< bi journal-code >}} Structured output"
-            file: notebooks/structured-output.ipynb
-          - text: "{{< bi journal-code >}} Generate Anki Flashcards"
-            file: notebooks/generate-anki-deck.ipynb
-          - text: "{{< bi download >}} Download anki-deck-generator.zip" 
+          - text: "anki-deck-generator.zip" 
             file: assets/anki-deck-generator.zip
 
       # - icon: wrench-adjustable #tools
@@ -71,14 +67,17 @@ website:
     #         url:  https://github.com/virtuelleakademie/ai-education-assignments-2025/issues
             
   sidebar:
-    - title: "Assignments"
+    - title: "Example code"
       style: "docked"
       search: true
       background: light
       contents:
-        - assignments/index.qmd
-        - assignments/assignment-1/index.qmd
-        - assignments/assignment-2/index.qmd
+        - examples/index.qmd
+        - notebooks/structured-output.ipynb
+        - notebooks/generate-anki-deck.ipynb
+        # - assignments/index.qmd
+        # - assignments/assignment-1/index.qmd
+        # - assignments/assignment-2/index.qmd
 
 
 page-footer:
@@ -89,7 +88,9 @@ page-footer:
 format:
   html:
     theme:
-      light: simplex
+      light: 
+        -simplex
+        - brand
     toc: true
     link-external-icon: true
     link-external-newwindow: true
@@ -250,5 +251,16 @@ custom-callout:
   schedule:
     title: "Schedule"
     icon-symbol: "⏰︎"
+    color: "steelblue"
+    collapse: false
+
+  background:
+    # title: "Example Prompt"
+    icon-symbol: "📚"
+    color: "steelblue"
+    collapse: false
+  assignment:
+    title: "Assignment"
+    icon-symbol: "💼"
     color: "steelblue"
     collapse: false
