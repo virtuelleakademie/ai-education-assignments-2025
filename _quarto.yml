@@ -97,6 +97,9 @@ format:
     anchor-sections: true
     smooth-scroll: true
     linkcolor: rebeccapurple
+    code-link: true
+    callout-appearance: default
+    callout-icon: false
 
 comments:
   hypothesis: 
