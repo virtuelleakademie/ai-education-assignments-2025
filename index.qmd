@@ -21,7 +21,7 @@ Both assignments involve working with the OpenAI API to generate Anki flashcards
 - Teaching AI Development (Workshop Design)
 - Quality Assurance for AI-Generated Content
 
-For both assignments, we provide the following code examples:
+For both assignments, we provide the code examples for generating structured output from an LLM, and for using structured output to generate Anki flashcards.
 
 - [Structured Output](notebooks/structured-output.ipynb): Example code for generating structured output from an LLM
 - [Generate Anki Deck](notebooks/generate-anki-deck.ipynb): Example code for generating Anki flashcards using structured output
@@ -74,7 +74,7 @@ If we save the contents above in to a file, we can import them into Anki by sele
 
 
 ### Presentation Focus
-Your 20-minute presentation should focus on high-level concepts rather than technical implementation details. You do not need to present or explain code during your presentation. Key areas to address include:
+Your presentation should focus on high-level concepts rather than technical implementation details. You do not need to present or explain code during your presentation. Key areas to address include:
 
 - Your conceptual approach to either:
   - Teaching AI development to educators, or 
@@ -106,7 +106,7 @@ While we provide example code and technical materials, your presentation will be
 
 ## Assignment 1: Teaching AI Development Workshop
 
-Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a 20-minute presentation of your workshop concept.
+Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard generator using an LLM. Give a presentation of your workshop concept.
 
 
 
@@ -133,7 +133,6 @@ Participants should learn to:
 
 ### Presentation Requirements
 
-Duration: 20 minutes presentation + 10 minutes Q&A
 Include:
 
 - Workshop structure and timeline
@@ -184,7 +183,6 @@ Build a quality control system that:
 
 ### Presentation Requirements
 
-Duration: 20 minutes presentation + 10 minutes Q&A
 Include:
 
 - Quality assessment criteria
