@@ -116,7 +116,7 @@ Demonstrate how you would teach lecturers to create an AI-powered Anki flashcard
 Many lecturers want to use AI in teaching but lack technical expertise. With varying technical abilities among faculty and limited training time, we need practical, hands-on approaches that enable immediate classroom application within a 3-hour workshop format.
 
 ### Your Task
-Design and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. Feel free to use the example code provided to help you. You may also point areas for improvement in the example code.
+Design and present a concept for a 3-hour workshop teaching participants how to create an AI-powered Anki flashcard generator using the OpenAI API. While example code is provided for reference, you are not expected to write any new code or make technical improvements. Focus instead on how you would effectively teach the concepts and guide participants through understanding the existing implementation.
 
 ### Workshop Goals
 Participants should learn to:
@@ -155,7 +155,7 @@ Include:
 
 ## Assignment 2: Quality Control for AI-Generated Content
 
-Develop and present a system for ensuring the quality of AI-generated educational materials.
+Present a concept for a system that would ensure the quality of AI-generated educational materials. Focus on the conceptual design rather than implementation details.
 
 :::{.callout-note title="Details" collapse=true}
 
