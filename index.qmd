@@ -167,11 +167,11 @@ Design and present a concept for a system that evaluates and improves the qualit
 
 
 ### System Goals
-Build a quality control system that:
+Design a quality control system concept that:
 
-- Evaluates the educational effectiveness of generated flashcards
-- Ensures accuracy and appropriateness of content
-- Provides methods for improvement and iteration
+- Describes how to evaluate the educational effectiveness of generated flashcards
+- Proposes methods to ensure accuracy and appropriateness of content 
+- Suggests approaches for improvement and iteration processes
 
 ### Presentation Requirements
 
